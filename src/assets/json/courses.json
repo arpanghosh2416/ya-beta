@@ -2,9 +2,17 @@
   {
     "name": "Java",
     "modules": [
+      "Java Introductory Class",
       "OOPs concept with Java and its architecture",
-      "Java Module 2",
-      "Java Module 3"
+      "Core Java with Real Time Concepts",
+      "Advance Java",
+      "Spring Framework Introduction",
+      "Spring Project Hands-on",
+      "Next level of Spring Framework",
+      "Assigning and practicing other Spring projects for revision(Can be continued with other modules)",
+      "API Testing after projects via Postman",
+      "Selenium with Java",
+      "Understanding of Microservice Architecture"
     ],
     "image": "https://yateam.vercel.app/static/media/java.765d56404838a44a9025.png"
   },
