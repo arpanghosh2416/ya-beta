@@ -143,7 +143,7 @@
     },
     {
       "title": "Custom App Development",
-      "description": "Accelerate your business growth with custom app development, leveraging user-focused design and robust technology to deliver engaging solutions for web and mobile platforms. Click to learn more.",
+      "description": "Accelerate your growth with custom app development—delivering intuitive, high-performance solutions for web and mobile. Click to learn more.",
       "longDescription": "This is long description",
       "logo": "/servicesImage/Custom app development.png",
       "learnMore": {
@@ -197,15 +197,39 @@
     },
     {
       "title": "Saas CRM Automations",
-      "description": "doloribus neque excepturi perferendis aspernatur, commodi inventore",
+      "description": "Streamline customer management and boost growth with SaaS CRM automations powered by intelligent workflows. Click to learn more.",
       "longDescription": "This is long description",
-      "logo": "/servicesImage/Saas CRM Automations.png"
+      "logo": "/servicesImage/Saas CRM Automations.png",
+      "learnMore": {
+        "intro": "Automate your sales, marketing, and support processes with intelligent SaaS CRM solutions, driving efficiency and growth at every customer touchpoint.",
+        "points": [
+          "Automated Workflows - Configure smart workflows to automate repetitive sales, marketing, and support tasks, freeing your team to focus on higher-value activities.",
+          "Lead Management & Nurturing - Automatically capture, segment, and nurture leads with personalized communications, ensuring no opportunity slips through the cracks.",
+          "Seamless Integration - Connect your CRM with existing business tools and channels for a unified, efficient data ecosystem.",
+          "Analytics & Reporting - Gain actionable insights with real-time dashboards and performance analytics to drive smarter decisions.",
+          "Scalable & Customizable - Adapt automation rules and CRM features to fit your unique business processes as you grow.",
+          "Expert Consultation & Support - Access professional guidance from setup and onboarding to ongoing optimization and troubleshooting."
+        ],
+        "conclusion": "Empower your digital ecosystem with reliable, scalable APIs designed for maximum compatibility and performance. Unlock new efficiencies and business opportunities through seamless integration."
+      }
     },
     {
       "title": "Enterprise Software Development",
-      "description": "doloribus neque excepturi perferendis aspernatur, commodi inventore",
+      "description": "Transform your business with enterprise software development, delivering robust, custom solutions that optimize performance and support large-scale growth. Click to learn more.",
       "longDescription": "This is long description",
-      "logo": "/servicesImage/Enterprise software development.png"
+      "logo": "/servicesImage/Enterprise software development.png",
+      "learnMore": {
+        "intro": "Empower your organization with scalable, secure enterprise software built to streamline operations and drive digital transformation.",
+        "points": [
+          "Tailored Enterprise Solutions - Design and develop software tailored to your organization’s unique workflows, processes, and compliance needs.",
+          "Integration with Business Systems - Seamlessly connect new solutions with existing ERP, CRM, and other core business platforms for unified operations.",
+          "High Scalability & Performance - Architect systems that handle high volumes of users, data, and transactions—ensuring reliable performance at scale.",
+          "Advanced Security Protocols - Implement enterprise-grade security features to protect sensitive data and ensure regulatory compliance.",
+          "Custom Reporting & Analytics - Enable data-driven decision making with real-time dashboards, analytics, and automated reporting tools.",
+          "Strategic Consultancy & Support - Benefit from expert guidance through every project phase—from planning and architecture to deployment and ongoing optimization."
+        ],
+        "conclusion": "Drive operational excellence with enterprise software designed for your business realities. Achieve sustainable growth and agility through secure, scalable technology solutions."
+      }
     }
   ],
   "designing": [
