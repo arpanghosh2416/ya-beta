@@ -7,7 +7,6 @@ import { SpeedInsights } from "@vercel/speed-insights/react";
 const App = (props) => {
   return (
     <RootProvider>
-      <SpeedInsights />
       <Header />
       <Outlet />
       <Footer />
