@@ -1,0 +1,25 @@
+{
+  "short_name": "Young Architects",
+  "name": "Young Architects provides innovative software solutions, graphics designing, fullstack web applications with cloud hosting, and technology education. Learn frontend, backend, and DSA with our expert courses",
+  "icons": [
+    {
+      "src": "favicon-48x48.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

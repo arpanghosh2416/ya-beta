@@ -1,0 +1,14 @@
+.slide {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, #0e1213 70%);
+}
+
+.slide::before {
+  content: "";
+  z-index: -1;
+  width: 100%;
+  height: 70%;
+  position: absolute;
+  background-size: cover;
+  transition-duration: 300ms;
+  background-image: var(--background-image);
+}

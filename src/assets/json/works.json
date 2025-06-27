@@ -1,0 +1,89 @@
+{
+  "marketing": [
+    {
+      "title": "Innerwork Advisors LLP",
+      "description": "These are some marketing insights of this company which has had a digital business for over 5 years but started SEO for only 2 months and this is the result already.",
+      "longDescription": "This is long description",
+      "logo": "https://yateam.vercel.app/static/media/im.f09b99d7e1997ffc9e61.png",
+      "img": "/workImage/Marketing1.png"
+    },
+    {
+      "title": "InnerWork Legal Services",
+      "description": "A child entity of InnerWork Advisors LLP, came into digital existence for 2 months and the results have been shocking just by organic marketing.",
+      "longDescription": "This is long description",
+      "logo": "https://yateam.vercel.app/static/media/im.f09b99d7e1997ffc9e61.png",
+      "img": "/workImage/Marketing2.png"
+    },
+    {
+      "title": "SaveLockSmith",
+      "description": "Situated in Los Angeles, they wanted to rank in Google organically within 1 month contracts’ time, and we have done it by pulling off the impossible. Now they have ranked in Los Angeles and have been happy with the results as well.",
+      "longDescription": "This is long description",
+      "logo": "https://yateam.vercel.app/static/media/im.f09b99d7e1997ffc9e61.png",
+      "img": "/workImage/Marketing3.png"
+    }
+  ],
+  "designing": [
+    {
+      "title": "Instagram Design Poster",
+      "description": "doloribus neque excepturi perferendis aspernatur, commodi inventore",
+      "longDescription": "This is long description",
+      "logo": "/workImage/Design1.png"
+    },
+    {
+      "title": " Digital Banner Design",
+      "description": "doloribus neque excepturi perferendis aspernatur, commodi inventore",
+      "longDescription": "This is long description",
+      "logo": "/workImage/Design2.png"
+    },
+    {
+      "title": "LinkedIN Design Poster",
+      "description": "doloribus neque excepturi perferendis aspernatur, commodi inventore",
+      "longDescription": "This is long description",
+      "logo": "/workImage/Design3.png"
+    },
+    {
+      "title": "Impressive Advertisement Poster Design",
+      "description": "doloribus neque excepturi perferendis aspernatur, commodi inventore",
+      "longDescription": "This is long description",
+      "logo": "/workImage/Design4.png"
+    },
+    {
+      "title": "Event Poster Design",
+      "description": "doloribus neque excepturi perferendis aspernatur, commodi inventore",
+      "longDescription": "This is long description",
+      "logo": "/workImage/Design5.png"
+    },
+    {
+      "title": "Custom Hand-Made design",
+      "description": "doloribus neque excepturi perferendis aspernatur, commodi inventore",
+      "longDescription": "This is long description",
+      "logo": "/workImage/Design6.png"
+    }
+  ],
+  "development": [
+    {
+      "title": "GALVA AI",
+      "description": "A company situated in Switzerland, which is fitted with a model AI into a simple landing page, optimizing it more with the continual of Release 3 and turning AI smarter day by day with customized solutions.",
+      "longDescription": "This is long description",
+      "logo": "/workImage/Dev1.png"
+    },
+    {
+      "title": "Innerwork Advisors LLP",
+      "description": "A company situated in SwitzerlandTurning a simple boring and not so user friendly Wordpress website into a sleek custom coded website which is giving them good reviews and SEO is skyrocketing with the passing day.",
+      "longDescription": "This is long description",
+      "logo": "/workImage/Dev3.png"
+    },
+    {
+      "title": "InnerWork Legal Services",
+      "description": "Impressed by Innerwork Advisors LLP website, they provided us the responsibility to make a website for this company and the result is impressive as ever.",
+      "longDescription": "This is long description",
+      "logo": "/workImage/Dev2.png"
+    },
+    {
+      "title": "Carbon AI",
+      "description": "A company situated in Singapore, had a really good experience with us. Based on an investment project, we did a model prototyping carbon credit project and developed to some extent.",
+      "longDescription": "This is long description",
+      "logo": "/workImage/Dev6.png"
+    }
+  ]
+}

@@ -1,0 +1,255 @@
+{
+  "marketing": [
+    {
+      "title": "Instagram Marketing",
+      "description": "Elevate your brand's online presence with Instagram – the perfect platform to engage and attract your target audience. Click to know more.",
+      "longDescription": "This is long description",
+      "logo": "/servicesImage/Instagram marketing.png",
+      "learnMore": {
+        "intro": "We help businesses showcase their brand visually, engage audiences, and drive conversions through strategic Instagram marketing.",
+        "points": [
+          "Setting up a professional business page and keeping it active.",
+          "Responding to comments, messages, and building positive audience interactions.",
+          "Crafting compelling bios with relevant hashtags to boost discoverability.",
+          "Planning engaging content and providing regular updates in a 15-minute call to ensure you're always in the loop."
+        ],
+        "conclusion": "Let Instagram become your visual portfolio to connect, engage, and grow your audience!"
+      }
+    },
+    {
+      "title": "Facebook Marketing",
+      "description": "Elevate your brand's online presence with Facebook – an well versed platform to engage and attract your target audience. Click to know more.",
+      "longDescription": "This is long description",
+      "logo": "/servicesImage/Facebook marketing.png",
+      "learnMore": {
+        "intro": "We help businesses showcase their brand visually, engage audiences, and drive conversions through strategic Facebook marketing.",
+        "points": [
+          "Setting up a professional business page and keeping it active.",
+          "Responding to comments, messages, and building positive audience interactions.",
+          "Crafting compelling bios with relevant hashtags to boost discoverability.",
+          "Planning engaging content and providing regular updates in a 15-minute call to ensure you're always in the loop."
+        ],
+        "conclusion": "Let Facebook become your visual portfolio to connect, engage, and grow your audience!"
+      }
+    },
+    {
+      "title": "LinkedIn Marketing",
+      "description": "Boost your professional presence and build a strong network with LinkedIn, the ultimate platform for business connections. Click to know more.",
+      "longDescription": "This is long description",
+      "logo": "/servicesImage/LinkedIn Marketing.png",
+      "learnMore": {
+        "intro": "We help businesses build a professional presence, foster connections, and generate quality leads through LinkedIn’s powerful networking platform.",
+        "points": [
+          "Crafting a professional and appealing LinkedIn page to represent your brand.",
+          "Managing comments, reviews, and messages to maintain positive public relations.",
+          "Designing a streamlined page layout and regularly updating content.",
+          "Developing strategic content plans and providing regular engagement with your target audience."
+        ],
+        "conclusion": "Let your LinkedIn page work as your digital business card and grow your professional network seamlessly!"
+      }
+    },
+    {
+      "title": "YouTube Marketing",
+      "description": "Empower your brand with YouTube marketing – the ultimate platform to connect, engage, and convert your audience through compelling video content. Click to learn more.",
+      "longDescription": "This is long description",
+      "logo": "/servicesImage/Youtube Marketing.png",
+      "learnMore": {
+        "intro": "We help businesses create, optimize, and promote engaging video content that drives brand awareness and accelerates conversions.",
+        "points": [
+          "Setting up a professional channel and consistently maintaining it.",
+          "Scriptwriting, video editing, and voiceovers to deliver high-quality videos.",
+          "Researching keywords, writing descriptions, adding tags, and using trending hashtags to improve video reach.",
+          "Responding to comments, managing audience interactions, and building positive public relations.",
+          "Finding and collaborating with influencers to promote your brand to a wider audience.",
+          "Creating and managing targeted paid ad campaigns for higher visibility.",
+          "Developing content plans and providing regular updates in a 15-minute call to keep you informed."
+        ],
+        "conclusion": "Let your brand's story come alive on YouTube and capture your audience like never before!"
+      }
+    },
+    {
+      "title": "Local SEO and Website SEO",
+      "description": "Get Organic Customers without spending money on Ads. Whether you want to rank in Google Maps or on the First Page of GOOGLE. Click to learn more.",
+      "longDescription": "This is long description",
+      "logo": "/servicesImage/Local & website seo.png",
+      "learnMore": {
+        "intro": "We help businesses get found locally in Maps, and also strategise them to rank in Google Search Pages, that maximize engagement and drive growth.",
+        "points": [
+          "We Rank you in Google Maps (Locally) if you are a Local Business Owner.",
+          "This drives Calls, enquiries and Sales Eventually.",
+          "We also rank your website on Google Pages, so that your customers can find you Online.",
+          "Local SEO is very effective in getting Sales, but often overlooked."
+        ],
+        "conclusion": "Let the world know your Brand organically and drive you business eventually!"
+      }
+    },
+    {
+      "title": "Marketing & Content Strategy Consultancy",
+      "description": "Expand your digital presence with our all-in-one marketing solutions designed to generate leads and improve online visibility. Click to learn more.",
+      "longDescription": "This is long description",
+      "logo": "/servicesImage/Marketing and content strategy consultancy.png",
+      "learnMore": {
+        "intro": "We provide so much more and you can always book your calls with us for consultancy. We provide unique solutions as we have our own CRM tool so your data is safe and your marketing solutions get optimized.",
+        "points": [
+          "Google Ads Management – Set up, manage, and optimize Google Ads campaigns for maximum ROI.",
+          "Google Map & Search Ranking – Improve local SEO to rank higher on Google Maps and search results.",
+          "Chat Widget Automation – Automate customer interactions with AI-powered chat widgets.",
+          "Automated Lead Nurturing – Convert leads into customers through automated follow-ups.",
+          "Pop-Up Magnet – Interactive offers pop-ups to capture leads and boost sales.",
+          "Google Review Management – Collect, manage, and respond to customer reviews to enhance your online reputation.",
+          "Database Reactivation – Reconnect with inactive leads to revive business opportunities.",
+          "Backlinks for SEO – Build high-quality backlinks to improve search engine rankings and website authority."
+        ],
+        "conclusion": "Fuel your business growth with a combination of strategic content and innovative marketing solutions!"
+      }
+    }
+  ],
+  "development": [
+    {
+      "title": "AI Development & Integration",
+      "description": "Transform your business with AI development and integration, leveraging cutting-edge technology to enhance efficiency and drive innovation. Click to Learn More.",
+      "longDescription": "This is long description",
+      "logo": "/servicesImage/AI development & integrations.png",
+      "learnMore": {
+        "intro": "Empower your business by seamlessly integrating AI into your existing workflows and digital assets, delivering intelligent, future-ready solutions tailored to your specific requirements.",
+        "points": [
+          "Custom AI Solutions - Seamlessly embed AI technologies into your current business workflows, ensuring each solution is tailored to address your specific operational needs.",
+          "Enhanced Operational Efficiency - Automate routine tasks and optimize complex processes, driving measurable improvements in productivity and cost savings across your organization.",
+          "Smart Digital Transformation - Transform static websites and legacy systems into intelligent, responsive platforms that deliver real-time insights and adaptive user experiences.",
+          "Scalable and Future-Ready - Implement AI solutions that scale with your business growth, providing agility and adaptability in an ever-evolving digital landscape.",
+          "Data-Driven Decision Making - Leverage advanced analytics and machine learning to turn raw data into actionable insights, empowering faster and more informed business decisions.",
+          "AI-Powered Marketing Solutions - Enhance your marketing strategies with AI-driven tools for personalized outreach, automated campaign management, lead scoring, and advanced customer insights—maximizing engagement and ROI."
+        ],
+        "conclusion": "Fuel your business growth with intelligent AI solutions and innovative marketing strategies. Drive results, amplify your reach, and stay ahead in today’s digital marketplace."
+      }
+    },
+    {
+      "title": "Custom Software Design",
+      "description": "Drive business transformation with custom software design, leveraging purpose-built solutions to optimize operations and accelerate growth. Click to Learn More.",
+      "longDescription": "This is long description",
+      "logo": "/servicesImage/Custom software design.png",
+      "learnMore": {
+        "intro": "Empower your organization with bespoke software solutions engineered to streamline your operations, enhance efficiency, and scale with your evolving business requirements.",
+        "points": [
+          "Tailored Architecture - Develop custom software systems precisely aligned with your business processes and long-term vision.",
+          "Seamless Integration - Ensure compatibility and smooth integration with your existing technology stack, minimizing disruption.",
+          "Scalable Solutions - Build flexible platforms designed to grow alongside your organization and adapt to changing demands.",
+          "Enhanced Security - Implement robust security protocols tailored to your unique data and compliance needs.",
+          "User-Centric Design - Deliver intuitive, user-friendly interfaces that drive adoption and improve productivity across your teams.",
+          "Expert Consultation - Benefit from strategic guidance and expert consulting at every stage—from requirements analysis and solution architecture to deployment and ongoing support."
+        ],
+        "conclusion": "Achieve operational excellence and agility with custom software designed around your business goals. Future-proof your operations and drive lasting growth with solutions built specifically for you."
+      }
+    },
+    {
+      "title": "Custom App Development",
+      "description": "Accelerate your business growth with custom app development, leveraging user-focused design and robust technology to deliver engaging solutions for web and mobile platforms. Click to learn more.",
+      "longDescription": "This is long description",
+      "logo": "/servicesImage/Custom app development.png",
+      "learnMore": {
+        "intro": "Build powerful, intuitive applications tailored to your business objectives, delivering seamless experiences across all devices.",
+        "points": [
+          "Tailored App Solutions - Create applications uniquely designed to address your specific business challenges and goals.",
+          "Cross-Platform Compatibility - Ensure smooth performance and a consistent user experience across web, Android, and iOS devices.",
+          "Agile Development Process - Leverage modern development methodologies for rapid delivery, flexibility, and ongoing improvement.",
+          "Scalable & Secure Architecture - Build apps with scalability and security at their core, supporting future growth and safeguarding your data.",
+          "User-Centric Experience - Focus on intuitive interfaces and engaging user journeys to maximize adoption and satisfaction.",
+          "End-to-End Consultancy - Receive expert guidance from ideation and design through deployment and post-launch support."
+        ],
+        "conclusion": "Empower your business with custom apps built for performance, scalability, and user delight. Transform your ideas into impactful digital solutions that drive measurable results."
+      }
+    },
+    {
+      "title": "Custom Web Development",
+      "description": "Elevate your digital presence with custom web development, delivering responsive, scalable, and secure solutions that drive engagement and support your business growth. Click to learn more.",
+      "longDescription": "This is long description",
+      "logo": "/servicesImage/Custom web development.png",
+      "learnMore": {
+        "intro": "Create high-performance, visually stunning websites tailored to your brand and business needs.",
+        "points": [
+          "Bespoke Website Solutions - Design and develop websites uniquely crafted to reflect your brand identity and achieve your business objectives.",
+          "Responsive & Mobile-First Design - Ensure seamless user experiences across all devices with adaptive layouts and modern UI/UX principles.",
+          "Performance Optimization - Build fast-loading, SEO-friendly sites that enhance user satisfaction and search engine visibility.",
+          "Robust Security - Incorporate advanced security measures to safeguard your data and protect against cyber threats.",
+          "Seamless Integration - Connect your website effortlessly with third-party services, APIs, and business tools for maximum functionality.",
+          "Consultative Approach - Benefit from expert guidance at every stage, from initial planning and design to launch and ongoing support."
+        ],
+        "conclusion": "Unlock new opportunities with a custom website built for impact, scalability, and performance. Position your business for digital success with a solution tailored to your unique vision."
+      }
+    },
+    {
+      "title": "API Development",
+      "description": "Streamline your business operations with robust API development, enabling effortless connectivity, data exchange, and integration across platforms. Click to Learn More.",
+      "longDescription": "This is long description",
+      "logo": "/servicesImage/API development.png",
+      "learnMore": {
+        "intro": "Design and deploy secure, high-performance APIs to power seamless integrations and enable scalable digital ecosystems—even if you already have an existing frontend.",
+        "points": [
+          "Custom API Solutions - Build APIs tailored to your specific business processes and application requirements.",
+          "Secure & Reliable Architecture - Implement industry-standard authentication, encryption, and error handling for safe and stable data transfer.",
+          "Seamless Integration - Enable smooth interoperability with internal systems, third-party platforms, and mobile/web applications.",
+          "Scalable Design - Architect APIs to handle increasing traffic and evolving business needs without compromising performance.",
+          "Comprehensive Documentation - Provide clear, developer-friendly documentation to accelerate onboarding and integration.",
+          "Expert Consultation - Receive strategic guidance from initial API planning and design through deployment and ongoing support."
+        ],
+        "conclusion": "Empower your digital ecosystem with reliable, scalable APIs designed for maximum compatibility and performance. Unlock new efficiencies and business opportunities through seamless integration."
+      }
+    },
+    {
+      "title": "Saas CRM Automations",
+      "description": "doloribus neque excepturi perferendis aspernatur, commodi inventore",
+      "longDescription": "This is long description",
+      "logo": "/servicesImage/Saas CRM Automations.png"
+    },
+    {
+      "title": "Enterprise Software Development",
+      "description": "doloribus neque excepturi perferendis aspernatur, commodi inventore",
+      "longDescription": "This is long description",
+      "logo": "/servicesImage/Enterprise software development.png"
+    }
+  ],
+  "designing": [
+    {
+      "title": "Social Media Poster Design",
+      "description": "doloribus neque excepturi perferendis aspernatur, commodi inventore",
+      "longDescription": "This is long description",
+      "logo": "/servicesImage/Social Media & Event Poster Design.png"
+    },
+    {
+      "title": "Event Poster Design",
+      "description": "doloribus neque excepturi perferendis aspernatur, commodi inventore",
+      "longDescription": "This is long description",
+      "logo": "/servicesImage/Social Media & Event Poster Design.png"
+    },
+    {
+      "title": "Front Cover Design",
+      "description": "doloribus neque excepturi perferendis aspernatur, commodi inventore",
+      "longDescription": "This is long description",
+      "logo": "/servicesImage/Magazine cover design.png"
+    },
+    {
+      "title": "Video & Image Editing",
+      "description": "doloribus neque excepturi perferendis aspernatur, commodi inventore",
+      "longDescription": "This is long description",
+      "logo": "/servicesImage/Video & Image Editing.png"
+    },
+    {
+      "title": "Writeups & Thumbnail Design",
+      "description": "doloribus neque excepturi perferendis aspernatur, commodi inventore",
+      "longDescription": "This is long description",
+      "logo": "/servicesImage/Write ups and thumbnail design.png"
+    },
+    {
+      "title": "Business Card Design",
+      "description": "doloribus neque excepturi perferendis aspernatur, commodi inventore",
+      "longDescription": "This is long description",
+      "logo": "/servicesImage/Business Card Design.png"
+    },
+    {
+      "title": "Customized forms of design and marketing",
+      "description": "doloribus neque excepturi perferendis aspernatur, commodi inventore",
+      "longDescription": "This is long description",
+      "logo": "/servicesImage/Customized forms of design and marketing.png"
+    }
+  ]
+}

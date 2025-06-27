@@ -1,0 +1,9 @@
+[
+  {
+    "name": "John Doe",
+    "role": "Full Stack Developer",
+    "description": "Expert in JavaScript, React & Spring Boot",
+    "image": "https://www.sound.xyz/_next/image?url=https%3A%2F%2Fd2i9ybouka0ieh.cloudfront.net%2Fartist-uploads%2F23d3b091-b365-4047-b2a3-327f101be4ad%2FRELEASE_COVER_IMAGE%2F2497527-newImage.png&w=384&q=75",
+    "company": ["tcs", "wipro"]
+  }
+]

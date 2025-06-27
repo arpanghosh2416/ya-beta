@@ -1,0 +1,18 @@
+.swiper {
+  width: 180px;
+  height: 280px;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+
+  @media (min-width: 368px) {
+    width: 220px;
+    height: 340px;
+  }
+
+  @media (min-width: 468px) {
+    width: 280px;
+    height: 400px;
+  }
+}

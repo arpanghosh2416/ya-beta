@@ -1,0 +1,30 @@
+.root {
+  background-size: 400%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  @media (min-width: 576px) {
+    background-size: 200%;
+  }
+
+  @media (min-width: 768px) {
+    background-size: cover;
+  }
+}
+
+/* Accessing agent's css rules */
+.customSwiper {
+  & div::after {
+    font-size: 25px;
+    color: var(--bg-secondary-light);
+
+    @media (min-width: 576px) {
+      font-size: 35px;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 45px;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "clients": [
+    {
+      "name": "Nibedita Client",
+      "quote": "Hello, I'm Nibedita Client"
+    },
+    {
+      "name": "Ankit Client",
+      "quote": "Hello, I'm Ankit Client"
+    },
+    {
+      "name": "Mukesh Client",
+      "quote": "Hello, I'm Mukesh Client"
+    },
+    {
+      "name": "Ashutosh Client",
+      "quote": "Hello, I'm Ashutosh Client"
+    }
+  ],
+  "students": [
+    {
+      "name": "Anuska Paul",
+      "title": "BCA Student of Insitute of Engineering & Management",
+      "quote": "Young Architects' technique of making student understand in a short span of time is amazing. I just opted in Python and did Machine Learning and Streamlit with database. I would highly recommend to join Young Architects"
+    },
+    {
+      "name": "Brishti Mahato",
+      "title": "BCA Student of Insitute of Engineering & Management",
+      "quote": "Being an IEM student, pressure was our constant companion but Young Architects really helped to handle out the pressure and upskilling was not a burden to us anymore and we gradually held ourself confident and my technical knowledge gradually developed with time."
+    },
+    {
+      "name": "Rishikesh Kumar",
+      "title": "BCA Student of Insitute of Engineering & Management",
+      "quote": "Hey, Rishikesh here. Well at first I really had no clue what should we do or not but Young Architects treated us not like students but friends. We started to build confidence gradually and my technical skills was improving day by day. Yeah, its not a one day task and Young Architects pushed me to my daily everyday, and made me landed on a job. Yes I got Accenture from my On-Campus. Thanks to IEM and Young Architects once again."
+    },
+    {
+      "name": "Nibedita Mondal",
+      "title": "BCA Student of Insitute of Engineering & Management",
+      "quote": "Hello, I am extremely gratitude to Young Architects and they really helped me to go beyond my limit. I personally took training in JAVA and liked the  way of teaching and helped me understand concepts which really helped me to crack placements while I was in college. When I sat for Accenture, I was close to the chase but lost. Young Architects encouraged me and here I am. I got three jobs at TCS, Braniacs and ZOLO which I got via On_Campus. So thank you to IEM and Young Architects once again."
+    },
+    {
+      "name": "Dipayan Halder",
+      "title": "BCA Student of Insitute of Engineering & Management",
+      "quote": "Well words will be less to show gratitude to Young Architects. I have never seen an eductaion cell so dedicated for their students. Yeah timing of the class was a bit issue here but other than that Young Architects helped me to go with my tech skills and upgraded me and here I am. I got good score in college projects where I really thought that we cannot do anything."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+.designContainer {
+  display: flex;
+  width: 100%;
+}
+
+.panel {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  -webkit-transition: all 300ms ease-in;
+}
+
+.panel h3 {
+  font-size: 24px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.panel.active {
+  flex: 5;
+}
+
+.panel.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+/* ...existing code... */
+
+@media (max-width: 767px) {
+  .designContainer {
+    flex-direction: column; /* Stack panels vertically */
+    width: 100%;
+    height: auto;
+  }
+
+  .panel {
+    width: 100%;
+    height: 10vh; /* Adjust as needed for mobile */
+    margin: 10px 0;
+    border-radius: 20px; 
+    flex: unset; /* Remove flex grow/shrink for vertical */
+  }
+
+  .panel.active {
+    height: 30vh; /* Make active panel taller */
+    flex: unset;
+  }
+
+
+  /* .panel:nth-of-type(4),
+  .panel:nth-of-type(5) {
+    display: none;
+  } */
+
+}
