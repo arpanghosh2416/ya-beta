@@ -4,21 +4,21 @@
       "title": "Innerwork Advisors LLP",
       "description": "These are some marketing insights of this company which has had a digital business for over 5 years but started SEO for only 2 months and this is the result already.",
       "longDescription": "This is long description",
-      "logo": "https://yateam.vercel.app/static/media/im.f09b99d7e1997ffc9e61.png",
+      "logo": "/clientLogo/iwallp.png",
       "img": "/workImage/Marketing1.png"
     },
     {
       "title": "InnerWork Legal Services",
       "description": "A child entity of InnerWork Advisors LLP, came into digital existence for 2 months and the results have been shocking just by organic marketing.",
       "longDescription": "This is long description",
-      "logo": "https://yateam.vercel.app/static/media/im.f09b99d7e1997ffc9e61.png",
+      "logo": "/clientLogo/iwls2.png",
       "img": "/workImage/Marketing2.png"
     },
     {
       "title": "SaveLockSmith",
       "description": "Situated in Los Angeles, they wanted to rank in Google organically within 1 month contracts’ time, and we have done it by pulling off the impossible. Now they have ranked in Los Angeles and have been happy with the results as well.",
       "longDescription": "This is long description",
-      "logo": "https://yateam.vercel.app/static/media/im.f09b99d7e1997ffc9e61.png",
+      "logo": "/clientLogo/locksmith.png",
       "img": "/workImage/Marketing3.png"
     }
   ],

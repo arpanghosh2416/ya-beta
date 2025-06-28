@@ -235,9 +235,23 @@
   "designing": [
     {
       "title": "Social Media Poster Design",
-      "description": "doloribus neque excepturi perferendis aspernatur, commodi inventore",
+      "description": "Stand out online with scroll-stopping social media posters crafted to reflect your brand’s identity and engage your audience. Click to learn more.",
       "longDescription": "This is long description",
-      "logo": "/servicesImage/Social Media & Event Poster Design.png"
+      "logo": "/servicesImage/Social Media & Event Poster Design.png",
+      "learnMore": {
+        "intro": "Empower your organization with scalable, secure enterprise software built to streamline operations and drive digital transformation.",
+        "points": [
+          "Instagram, Facebook & LinkedIn post design - Custom visuals for different platforms tailored to your goals.",
+          "Promotional Banner Design - Eye-catching posters for sales, events, product launches, and more.",
+          "Festive & Event-Based Creatives - Stay relevant with posters for festivals, trends, and special days.",
+          "Carousel Designs - Multi-slide posts to showcase services or tell compelling stories.",
+          "Branding Consistency - Ensure all designs align with your logo, color scheme, and brand message.",
+          "Motion Graphics & GIFs - Add movement to your posts for better engagement.",
+          "Weekly/Monthly Design Packages - Stay consistent with scheduled content support.",
+          "Creative Copywriting - Captions and poster text that match the visual tone and call-to-action."
+        ],
+        "conclusion": "Drive operational excellence with enterprise software designed for your business realities. Achieve sustainable growth and agility through secure, scalable technology solutions."
+      }
     },
     {
       "title": "Event Poster Design",

@@ -8,9 +8,9 @@ const MarketingComponent = () => {
   const [activeInfo, setActiveInfo] = useState({
     title: "Instagram Marketing",
     description:
-      "doloribus neque excepturi perferendis aspernatur, commodi inventore",
+      "These are some marketing insights of this company which has had a digital business for over 5 years but started SEO for only 2 months and this is the result already.",
     longDescription: "This is long description",
-    logo: "https://yateam.vercel.app/static/media/im.f09b99d7e1997ffc9e61.png",
+    logo: "/clientLogo/iwallp.png",
     img: "/workImage/Marketing1.png",
   });
 
@@ -36,24 +36,32 @@ const MarketingComponent = () => {
       data-aos-delay="100"
       data-aos-duration="600"
     >
-      <div className="h-[60vh] md:h-[80vh] w-full rounded-md relative ">
+      <div className="relative h-[60vh] w-full rounded-md md:h-[80vh]">
         <img
           src={activeInfo.img}
           alt="bg"
-          className={`h-full w-full rounded-md  transition-all duration-300 ${imgAnim ? styles.zoomAnimation : ""} brightness-[0.5]`}
+          className={`h-full w-full rounded-md transition-all duration-300 ${imgAnim ? styles.zoomAnimation : ""} brightness-[0.5]`}
         />
-        <div className="absolute top-0 left-0 flex flex-col items-start justify-top h-full w-full rounded-md p-10">
-          <h1 className={`text-white text-[2rem] transition-opacity duration-300 ${textAnim ? styles.fadeAnimation : ""}`}>{activeInfo.title}</h1>
-          <p className={`text-white transition-opacity duration-300 ${textAnim ? styles.fadeAnimation : ""}`}>{activeInfo.description}</p>
+        <div className="justify-top absolute left-0 top-0 flex h-full w-full flex-col items-start rounded-md p-10">
+          <h1
+            className={`text-[2rem] text-white transition-opacity duration-300 ${textAnim ? styles.fadeAnimation : ""}`}
+          >
+            {activeInfo.title}
+          </h1>
+          <p
+            className={`text-white transition-opacity duration-300 ${textAnim ? styles.fadeAnimation : ""}`}
+          >
+            {activeInfo.description}
+          </p>
           {/* <p className={`text-white transition-opacity duration-300 ${textAnim ? styles.fadeAnimation : ""}`}>{activeInfo.longDescription}</p> */}
         </div>
       </div>
 
-      <div className="absolute bottom-0 left-0 right-0 flex items-center justify-end gap-2 md:gap-5 p-4">
+      <div className="absolute bottom-0 left-0 right-0 flex items-center justify-end gap-2 p-4 md:gap-5">
         {works.marketing.map((panel, index) => (
           <div
             key={index}
-            className={`bg-black/50  ${styles.card} ${activeIndex === index ? "border-2 border-white border-solid" : ""}`}
+            className={`bg-black/50 ${styles.card} ${activeIndex === index ? "border-2 border-solid border-white" : ""}`}
             style={{ backgroundImage: `url(${logo})` }}
             onClick={() => handleCardClick(index, panel)}
           >
