@@ -49,5 +49,15 @@
       "AI with Python."
     ],
     "image": "https://yateam.vercel.app/static/media/python.5a59592e493056c3e7d6.png"
+  },
+  {
+    "name": "General Concepts",
+    "modules": [
+      "Understanding the architecture of Operating System.",
+      "Understanding the concepts of Database and deep diving into architecture.",
+      "Conceptual deep dive into Computer Networks",
+      "Learning about cloud based on GCP (Google Cloud Platform)"
+    ],
+    "image": "/coursesImage/computer.png"
   }
 ]

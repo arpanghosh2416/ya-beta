@@ -88,8 +88,9 @@ const Testimonial = (props) => {
               <SwiperSlide key={testimonial.name}>
                 <article className="mx-auto flex w-[80%] flex-col gap-y-2">
                   <section>
-                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-slate-400">
-                      <i className="fa-solid fa-user text-3xl"></i>
+                    <div className="flex h-28 w-28 items-center justify-center rounded-full bg-slate-400">
+                      <img src={testimonial.image} alt="" />
+                      {/* <i className="text-3xl fa-solid fa-user"></i> */}
                     </div>
                   </section>
                   <section className="text-xl font-semibold">
