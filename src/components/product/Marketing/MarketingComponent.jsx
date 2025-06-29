@@ -62,7 +62,7 @@ const MarketingComponent = () => {
           <div
             key={index}
             className={`bg-black/50 ${styles.card} ${activeIndex === index ? "border-2 border-solid border-white" : ""}`}
-            style={{ backgroundImage: `url(${logo})` }}
+            style={{ backgroundImage: `url(${panel.logo})` }}
             onClick={() => handleCardClick(index, panel)}
           >
             <div className={styles.overlay}>

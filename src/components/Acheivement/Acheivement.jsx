@@ -6,17 +6,19 @@ import {
 } from "../../components";
 import AcheivementCard from "./AcheivementCard";
 
+const whatsAppNumber = "+919883952010";
+
 const Acheivement = () => {
   return (
     <Container>
       <article
-        id="about"
+        id="acheivement"
         data-aos="fade-up"
         data-aos-delay="100"
         data-aos-duration="600"
         className="flex flex-col justify-between gap-y-10 py-16 md:flex-row md:gap-y-0"
       >
-        <section className="flex w-full flex-col justify-center gap-y-2  md:w-[30%]">
+        <section className="flex w-full flex-col justify-center gap-y-2 md:w-[30%]">
           <p className="font-poppins text-base uppercase text-primary">
             Our Acheivement
           </p>
@@ -24,16 +26,24 @@ const Acheivement = () => {
             {"Check our best students "}
             <span className="text-primary">To assure You</span>
           </h3>
-          <button className="mb-2 flex w-[50%] items-center justify-center space-x-2   rounded-md bg-black/75 p-2 font-semibold">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={(e) => e.stopPropagation()}
+            href={`https://api.whatsapp.com/send?phone=${whatsAppNumber}&text=${encodeURIComponent(
+              `Hello! I found your business on Young Architects`,
+            )}`}
+            className="mb-2 flex w-[50%] items-center justify-center space-x-2 rounded-md bg-black/75 p-2 font-semibold"
+          >
             <span>
               <i className="fa-brands fa-whatsapp text-xl text-green-600"></i>
             </span>
             <span className="text-white">Chat</span>
-          </button>
+          </a>
         </section>
         <section className="w-full md:w-[70%]">
           <TeamMobileSwiper />
-          <TeamDesktopSwiper />          
+          <TeamDesktopSwiper />
         </section>
       </article>
     </Container>

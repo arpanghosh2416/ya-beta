@@ -1,6 +1,5 @@
 import classNames from "classnames";
-import { team } from "../../assets";
-import { Work1stImage } from "../../assets";
+import { team, students, Work1stImage } from "../../assets";
 
 // import required modules
 import { Navigation, Autoplay } from "swiper/modules";
@@ -22,9 +21,9 @@ const TeamDesktopSwiper = (props) => {
         navigation={window.screen.width > 576 ? true : false}
         modules={[Navigation, Autoplay]}
         autoplay={{
-              delay: 2000,
-              disableOnInteraction: false,
-            }}
+          delay: 2000,
+          disableOnInteraction: false,
+        }}
         breakpoints={{
           768: {
             slidesPerView: 2,
@@ -38,14 +37,14 @@ const TeamDesktopSwiper = (props) => {
         }}
         className="swiperjs-slider-ud"
       >
-        {team?.map((member) => {
+        {students?.map((student) => {
           return (
             <SwiperSlide
-              key={member.name}
+              key={student.name}
               className="overflow-hidden rounded-xl"
             >
               <div
-                style={{ "--background-image": `url(${Work1stImage})` }}
+                style={{ "--background-image": `url(${student.image})` }}
                 className={classNames(
                   css.slide,
                   `h-[480px] w-full overflow-hidden rounded-xl before:hover:scale-125 xs:h-[320px] sm:h-[360px]`,
@@ -60,10 +59,10 @@ const TeamDesktopSwiper = (props) => {
                   <div className="px-2">
                     <div className="mb-3 px-1 text-white">
                       <h1 className="w-[80%] truncate text-xs text-slate-300/60">
-                        {member.description}
+                        {student.description}
                       </h1>
                       <h1 className="truncate text-[0.79rem] font-medium sm:text-xl">
-                        {member.name}
+                        {student.name}
                       </h1>
                     </div>
                   </div>

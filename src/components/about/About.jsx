@@ -13,11 +13,11 @@ const About = () => {
         data-aos="fade-up"
         data-aos-delay="100"
         data-aos-duration="600"
-        className="flex flex-col justify-between gap-y-10 py-16 md:flex-row md:gap-y-0 gap-x-5"
+        className="flex flex-col justify-between gap-x-5 gap-y-10 py-16 md:flex-row md:gap-y-0"
       >
         <section className="flex w-full flex-col justify-center gap-y-2 text-white md:w-[50%]">
           <p className="font-poppins text-base uppercase text-primary">
-            CONTACT OUR 
+            CONTACT OUR
           </p>
           <h3 className="font-poppins text-[24px] font-bold leading-8 md:text-[32px] md:leading-10">
             {"Certified Team Of Experts "}
@@ -30,14 +30,17 @@ const About = () => {
             <span>Chat</span>
           </button> */}
         </section>
-        <section class="rounded-[15px] bg-[#69696940] backdrop-blur-[10px]">
+        <section
+          id="contact-us"
+          class="rounded-[15px] bg-[#69696940] backdrop-blur-[10px]"
+        >
           <div class="mx-auto max-w-screen-md px-4 py-8 lg:py-10">
             <h2 class="mb-4 text-center text-2xl font-extrabold tracking-tight text-white">
               Contact Us
             </h2>
-            <p class="mb-8 text-center font-light  text-gray-400 sm:text-[1rem] lg:mb-5">
-              Got an issue? Want to send feedback about a beta feature?
-              Need details about our Business plan? Let us know.
+            <p class="mb-8 text-center font-light text-gray-400 sm:text-[1rem] lg:mb-5">
+              Got an issue? Want to send feedback about a beta feature? Need
+              details about our Business plan? Let us know.
             </p>
             <form action="#" class="space-y-4">
               <div>
@@ -50,7 +53,7 @@ const About = () => {
                 <input
                   type="email"
                   id="email"
-                  class="focus:ring-primary-500 focus:ring-primary-500 focus:border-primary-500 shadow-sm-light block w-full rounded-lg border   p-2.5 text-sm  shadow-sm border-gray-600 bg-gray-700 text-white placeholder-gray-400"
+                  class="focus:ring-primary-500 focus:ring-primary-500 focus:border-primary-500 shadow-sm-light block w-full rounded-lg border border-gray-600 bg-gray-700 p-2.5 text-sm text-white placeholder-gray-400 shadow-sm"
                   placeholder="name@flowbite.com"
                   required
                 />
@@ -65,7 +68,7 @@ const About = () => {
                 <input
                   type="text"
                   id="subject"
-                  class="focus:ring-primary-500 focus:border-primary-500 focus:ring-primary-500 focus:border-primary-500 shadow-sm-light block w-full rounded-lg border  p-3 text-sm  shadow-sm border-gray-600 bg-gray-700 text-white placeholder-gray-400"
+                  class="focus:ring-primary-500 focus:border-primary-500 focus:ring-primary-500 focus:border-primary-500 shadow-sm-light block w-full rounded-lg border border-gray-600 bg-gray-700 p-3 text-sm text-white placeholder-gray-400 shadow-sm"
                   placeholder="Let us know how we can help you"
                   required
                 />
@@ -80,8 +83,8 @@ const About = () => {
                 <textarea
                   id="message"
                   rows="3"
-                  class="focus:ring-primary-500 focus:border-primary-500 focus:ring-primary-500 focus:border-primary-500 block w-full rounded-lg border  p-2.5 text-sm  shadow-sm border-gray-600 bg-gray-700 text-white placeholder-gray-400 resize-none"
-                  placeholder="Leave a comment..." 
+                  class="focus:ring-primary-500 focus:border-primary-500 focus:ring-primary-500 focus:border-primary-500 block w-full resize-none rounded-lg border border-gray-600 bg-gray-700 p-2.5 text-sm text-white placeholder-gray-400 shadow-sm"
+                  placeholder="Leave a comment..."
                 ></textarea>
               </div>
               <button

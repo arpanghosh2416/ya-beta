@@ -27,8 +27,16 @@ const Work = (props) => {
             <br />
             <span className="text-primary">Young Architects</span>
           </h1>
-          <h2 className="font-poppins  mt-[1rem] text-[16px] opacity-90 md:text-[18px]">
-          Choose <span className="text-primary">Young Architects</span> for a client-centric approach where your vision is our priority. We offer tailored solutions through <span className="text-primary-blue">deep business analysis</span>, <span className="text-primary-blue">collaborative consultancy</span>, and a <span className="text-primary-blue">commitment to perfection</span>. With us, you're not just a client — <span className="text-primary">you're family</span>.
+          <h2 className="mt-[1rem] font-poppins text-[16px] opacity-90 md:text-[18px]">
+            Choose <span className="text-primary">Young Architects</span> for a
+            client-centric approach where your vision is our priority. We offer
+            tailored solutions through{" "}
+            <span className="text-primary-blue">deep business analysis</span>,{" "}
+            <span className="text-primary-blue">collaborative consultancy</span>
+            , and a{" "}
+            <span className="text-primary-blue">commitment to perfection</span>.
+            With us, you're not just a client —{" "}
+            <span className="text-primary">you're family</span>.
           </h2>
         </section>
         <section className="flex w-full flex-wrap items-center justify-center gap-6 md:w-[70%]">

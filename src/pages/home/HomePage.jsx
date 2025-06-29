@@ -13,7 +13,7 @@ const HomePage = (props) => {
   return (
     <main>
       <div className="bg-black">
-        <Hero /> 
+        <Hero />
       </div>
 
       <div className="bg-white">
@@ -37,12 +37,12 @@ const HomePage = (props) => {
 
       {/* ed acheivement - need to be done */}
       <div className="bg-white">
-      <Acheivement />
+        <Acheivement />
       </div>
 
       {/* teams */}
       <div className="bg-black">
-        <About /> 
+        <About />
       </div>
 
       <div className="bg-white">

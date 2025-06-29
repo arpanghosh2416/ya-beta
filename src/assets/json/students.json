@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Poulami Pan",
+    "role": "Full Stack Developer",
+    "description": "Expert in JavaScript, React & Spring Boot",
+    "image": "https://youngarchitects.in/image/student/poulami.jpg",
+    "company": [
+      "tcs",
+      "wipro"
+    ]
+  },
+  {
+    "name": "Dipta Karar",
+    "role": "Full Stack Developer",
+    "description": "Expert in JavaScript, React & Spring Boot",
+    "image": "https://youngarchitects.in/image/student/dipta.jpg",
+    "company": [
+      "tcs",
+      "wipro"
+    ]
+  },
+  {
+    "name": "Arijit Paul",
+    "role": "Full Stack Developer",
+    "description": "Expert in JavaScript, React & Spring Boot",
+    "image": "https://youngarchitects.in/image/student/arijit.jpg",
+    "company": [
+      "tcs",
+      "wipro"
+    ]
+  },
+  {
+    "name": "Nibedita Mondal",
+    "role": "Full Stack Developer",
+    "description": "Expert in JavaScript, React & Spring Boot",
+    "image": "https://youngarchitects.in/image/student/nibedita.jpeg",
+    "company": [
+      "tcs",
+      "wipro"
+    ]
+  },
+  {
+    "name": "Rishikesh Kumar",
+    "role": "Full Stack Developer",
+    "description": "Expert in JavaScript, React & Spring Boot",
+    "image": "https://youngarchitects.in/image/student/rishikesh.jpeg",
+    "company": [
+      "tcs",
+      "wipro"
+    ]
+  }
+]

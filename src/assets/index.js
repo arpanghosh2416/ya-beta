@@ -1,5 +1,5 @@
 export { default as team } from "./json/team.json";
-export { default as student } from "./json/student.json";
+export { default as students } from "./json/students.json";
 export { default as works } from "./json/works.json";
 export { default as courses } from "./json/courses.json";
 export { default as services } from "./json/services.json";
