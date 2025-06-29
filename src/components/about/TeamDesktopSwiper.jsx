@@ -52,16 +52,16 @@ const TeamDesktopSwiper = (props) => {
               >
                 <div className="flex h-full flex-col justify-between">
                   <div className="flex justify-end px-1.5 py-3">
-                    <div className="rounded-full bg-black/30 px-2 py-0.5 pt-1 font-semibold text-white backdrop-blur-lg xs:text-[10.5px] sm:text-[12.5px]">
-                      Starts Aug 30, 12:30PM
+                    <div className="text-primary-blue-ed rounded-full bg-black/30 px-2 py-0.5 pt-1 font-semibold backdrop-blur-lg xs:text-[10.5px] sm:text-[12.5px]">
+                      {student.role}
                     </div>
                   </div>
                   <div className="px-2">
                     <div className="mb-3 px-1 text-white">
-                      <h1 className="w-[80%] truncate text-xs text-slate-300/60">
+                      <h1 className="text-primary-blue-ed w-[80%] truncate text-xs">
                         {student.description}
                       </h1>
-                      <h1 className="truncate text-[0.79rem] font-medium sm:text-xl">
+                      <h1 className="text-primary-blue-ed truncate text-[0.79rem] font-medium sm:text-xl">
                         {student.name}
                       </h1>
                     </div>

@@ -20,6 +20,7 @@ module.exports = {
         "primary-blue": "#3983C5",
         "secondary-dark": "#3983C5",
         "secondary-light": "#559FD6",
+        "primary-blue-ed": "#15ade5",
       },
     },
   },

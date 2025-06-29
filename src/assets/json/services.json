@@ -2,7 +2,7 @@
   "marketing": [
     {
       "title": "Instagram Marketing",
-      "description": "Elevate your brand's online presence with Instagram – the perfect platform to engage and attract your target audience. Click to know more.",
+      "description": "Elevate your brand's online presence with Instagram - the perfect platform to engage and attract your target audience. Click to know more.",
       "longDescription": "This is long description",
       "logo": "/servicesImage/Instagram marketing.png",
       "learnMore": {
@@ -18,7 +18,7 @@
     },
     {
       "title": "Facebook Marketing",
-      "description": "Elevate your brand's online presence with Facebook – an well versed platform to engage and attract your target audience. Click to know more.",
+      "description": "Elevate your brand's online presence with Facebook - an well versed platform to engage and attract your target audience. Click to know more.",
       "longDescription": "This is long description",
       "logo": "/servicesImage/Facebook marketing.png",
       "learnMore": {
@@ -50,7 +50,7 @@
     },
     {
       "title": "YouTube Marketing",
-      "description": "Empower your brand with YouTube marketing – the ultimate platform to connect, engage, and convert your audience through compelling video content. Click to learn more.",
+      "description": "Empower your brand with YouTube marketing - the ultimate platform to connect, engage, and convert your audience through compelling video content. Click to Learn More.",
       "longDescription": "This is long description",
       "logo": "/servicesImage/Youtube Marketing.png",
       "learnMore": {
@@ -69,7 +69,7 @@
     },
     {
       "title": "Local SEO and Website SEO",
-      "description": "Get Organic Customers without spending money on Ads. Whether you want to rank in Google Maps or on the First Page of GOOGLE. Click to learn more.",
+      "description": "Get Organic Customers without spending money on Ads. Whether you want to rank in Google Maps or on the First Page of GOOGLE. Click to Learn More.",
       "longDescription": "This is long description",
       "logo": "/servicesImage/Local & website seo.png",
       "learnMore": {
@@ -85,20 +85,20 @@
     },
     {
       "title": "Marketing & Content Strategy Consultancy",
-      "description": "Expand your digital presence with our all-in-one marketing solutions designed to generate leads and improve online visibility. Click to learn more.",
+      "description": "Expand your digital presence with our all-in-one marketing solutions designed to generate leads and improve online visibility. Click to Learn More.",
       "longDescription": "This is long description",
       "logo": "/servicesImage/Marketing and content strategy consultancy.png",
       "learnMore": {
         "intro": "We provide so much more and you can always book your calls with us for consultancy. We provide unique solutions as we have our own CRM tool so your data is safe and your marketing solutions get optimized.",
         "points": [
-          "Google Ads Management – Set up, manage, and optimize Google Ads campaigns for maximum ROI.",
-          "Google Map & Search Ranking – Improve local SEO to rank higher on Google Maps and search results.",
-          "Chat Widget Automation – Automate customer interactions with AI-powered chat widgets.",
-          "Automated Lead Nurturing – Convert leads into customers through automated follow-ups.",
-          "Pop-Up Magnet – Interactive offers pop-ups to capture leads and boost sales.",
-          "Google Review Management – Collect, manage, and respond to customer reviews to enhance your online reputation.",
-          "Database Reactivation – Reconnect with inactive leads to revive business opportunities.",
-          "Backlinks for SEO – Build high-quality backlinks to improve search engine rankings and website authority."
+          "Google Ads Management - Set up, manage, and optimize Google Ads campaigns for maximum ROI.",
+          "Google Map & Search Ranking - Improve local SEO to rank higher on Google Maps and search results.",
+          "Chat Widget Automation - Automate customer interactions with AI-powered chat widgets.",
+          "Automated Lead Nurturing - Convert leads into customers through automated follow-ups.",
+          "Pop-Up Magnet - Interactive offers pop-ups to capture leads and boost sales.",
+          "Google Review Management - Collect, manage, and respond to customer reviews to enhance your online reputation.",
+          "Database Reactivation - Reconnect with inactive leads to revive business opportunities.",
+          "Backlinks for SEO - Build high-quality backlinks to improve search engine rankings and website authority."
         ],
         "conclusion": "Fuel your business growth with a combination of strategic content and innovative marketing solutions!"
       }
@@ -143,7 +143,7 @@
     },
     {
       "title": "Custom App Development",
-      "description": "Accelerate your growth with custom app development—delivering intuitive, high-performance solutions for web and mobile. Click to learn more.",
+      "description": "Accelerate your growth with custom app development—delivering intuitive, high-performance solutions for web and mobile. Click to Learn More.",
       "longDescription": "This is long description",
       "logo": "/servicesImage/Custom app development.png",
       "learnMore": {
@@ -161,7 +161,7 @@
     },
     {
       "title": "Custom Web Development",
-      "description": "Elevate your digital presence with custom web development, delivering responsive, scalable, and secure solutions that drive engagement and support your business growth. Click to learn more.",
+      "description": "Elevate your digital presence with custom web development, delivering responsive, scalable, and secure solutions that drive engagement and support your business growth. Click to Learn More.",
       "longDescription": "This is long description",
       "logo": "/servicesImage/Custom web development.png",
       "learnMore": {
@@ -197,7 +197,7 @@
     },
     {
       "title": "Saas CRM Automations",
-      "description": "Streamline customer management and boost growth with SaaS CRM automations powered by intelligent workflows. Click to learn more.",
+      "description": "Streamline customer management and boost growth with SaaS CRM automations powered by intelligent workflows. Click to Learn More.",
       "longDescription": "This is long description",
       "logo": "/servicesImage/Saas CRM Automations.png",
       "learnMore": {
@@ -215,7 +215,7 @@
     },
     {
       "title": "Enterprise Software Development",
-      "description": "Transform your business with enterprise software development, delivering robust, custom solutions that optimize performance and support large-scale growth. Click to learn more.",
+      "description": "Transform your business with enterprise software development, delivering robust, custom solutions that optimize performance and support large-scale growth. Click to Learn More.",
       "longDescription": "This is long description",
       "logo": "/servicesImage/Enterprise software development.png",
       "learnMore": {
@@ -235,11 +235,11 @@
   "designing": [
     {
       "title": "Social Media Poster Design",
-      "description": "Stand out online with scroll-stopping social media posters crafted to reflect your brand’s identity and engage your audience. Click to learn more.",
+      "description": "Stand out online with scroll-stopping social media posters crafted to reflect your brand's identity and engage your audience. Click to Learn More.",
       "longDescription": "This is long description",
       "logo": "/servicesImage/Social Media & Event Poster Design.png",
       "learnMore": {
-        "intro": "Empower your organization with scalable, secure enterprise software built to streamline operations and drive digital transformation.",
+        "intro": "Empower your brand with impactful social media poster designs that boost visibility and maximize audience engagement across digital channels.",
         "points": [
           "Instagram, Facebook & LinkedIn post design - Custom visuals for different platforms tailored to your goals.",
           "Promotional Banner Design - Eye-catching posters for sales, events, product launches, and more.",
@@ -255,39 +255,123 @@
     },
     {
       "title": "Event Poster Design",
-      "description": "doloribus neque excepturi perferendis aspernatur, commodi inventore",
+      "description": "Promote your events with striking poster designs that capture attention and drive attendance, both online and offline. Click to Learn More.",
       "longDescription": "This is long description",
-      "logo": "/servicesImage/Social Media & Event Poster Design.png"
+      "logo": "/servicesImage/Social Media & Event Poster Design.png",
+      "learnMore": {
+        "intro": "Empower your event with compelling poster designs that capture attention and drive participation across every promotional channel.",
+        "points": [
+          " Concert & Live Show Posters - Visually engaging layouts for music events, stand-ups, or performances.",
+          "Corporate Event Posters - Professional designs for conferences, seminars, and business gatherings.",
+          "Product Launch & Expo Posters - Make a bold statement for product unveilings or trade shows.",
+          "College Fest & Cultural Event Posters - Youthful and vibrant designs tailored to the theme.",
+          "Online Webinar & Workshop Posters - Clean and informative layouts for digital events.",
+          "Invitation Posters - Formal or creative invite posters that set the right tone.",
+          "Custom Themes & Branding - Posters tailored to match your event's vibe and branding.",
+          "Print-Ready & Web-Optimized Files - Delivered in formats suitable for both print and social media use."
+        ],
+        "conclusion": "Make your event unmissable with designs that do more than just look good—they attract the right crowd. Let your event poster tell a story before the event even begins."
+      }
     },
     {
       "title": "Front Cover Design",
-      "description": "doloribus neque excepturi perferendis aspernatur, commodi inventore",
+      "description": "Make a powerful first impression with professionally crafted front cover designs for brochures, reports, presentations, and eBooks. Click to Learn More.",
       "longDescription": "This is long description",
-      "logo": "/servicesImage/Magazine cover design.png"
+      "logo": "/servicesImage/Magazine cover design.png",
+      "learnMore": {
+        "intro": "Empower your publication with striking front cover designs that captivate your audience and reflect your brand's identity from the very first glance.",
+        "points": [
+          "Company Profile Cover Design - Set the tone for your brand with a polished, professional front page.",
+          "Brochure & Catalog Covers - Eye-catching visuals to spark curiosity and interest.",
+          "Magazine & eBook Covers - Creative layouts tailored to your content and target audience.",
+          "Report & Whitepaper Covers - Sleek and credible designs for business and academic use.",
+          "Event Program Covers - Reflect your event's theme with a well-composed front page.",
+          "Custom Typography & Illustration - Unique fonts and illustrations to elevate your brand.",
+          "Print & Digital-Ready Formats - High-resolution files optimized for both print and screen.",
+          "Brand-Aligned Design - Covers that match your overall brand identity and voice."
+        ],
+        "conclusion": "Your front cover is more than just a page — it’s the hook. We design covers that invite, intrigue, and convert readers into loyal viewers or customers."
+      }
     },
     {
       "title": "Video & Image Editing",
-      "description": "doloribus neque excepturi perferendis aspernatur, commodi inventore",
+      "description": "Transform raw visuals into polished content with professional video and image editing services that elevate your brand. Click to Learn More.",
       "longDescription": "This is long description",
-      "logo": "/servicesImage/Video & Image Editing.png"
+      "logo": "/servicesImage/Video & Image Editing.png",
+      "learnMore": {
+        "intro": "Empower your publication with striking front cover designs that captivate your audience and reflect your brand's identity from the very first glance.",
+        "points": [
+          "Short Reels & Promo Video Editing - Snappy, engaging edits for social media and ad campaigns.",
+          "YouTube Video Editing - Seamless transitions, intros/outros, and storytelling cuts.",
+          "Event Highlight Videos - Compile the best moments with cinematic edits and music.",
+          "Product Photo Retouching - Enhance product images for eCommerce and catalogs.",
+          "Background Removal & Object Cleanup - Clean, crisp edits that focus attention where it matters.",
+          "Color Grading & Filters - Bring out the mood with professional color correction.",
+          "Text Overlay & Subtitles - Improve accessibility and messaging with clear captions.",
+          "Thumbnail & Cover Frame Design - Create scroll-stopping visuals for video content."
+        ],
+        "conclusion": "Let your content do the talking with edits that amplify quality, boost engagement, and build a strong visual identity. Whether it's a subtle touch-up or a full-scale edit, we bring your visuals to life."
+      }
     },
     {
       "title": "Writeups & Thumbnail Design",
-      "description": "doloribus neque excepturi perferendis aspernatur, commodi inventore",
+      "description": "Get compelling write ups and eye-catching thumbnails that increase clicks, views, and engagement across all digital platforms. Click to Learn More.",
       "longDescription": "This is long description",
-      "logo": "/servicesImage/Write ups and thumbnail design.png"
+      "logo": "/servicesImage/Write ups and thumbnail design.png",
+      "learnMore": {
+        "intro": "Empower your content with compelling writeups and captivating thumbnail designs that boost engagement and drive audience interaction across digital platforms.",
+        "points": [
+          "YouTube Thumbnail Design - Bold, clickable designs tailored to your content and niche.",
+          "Blog Cover Thumbnails - Visually aligned thumbnails to draw readers into your articles.",
+          "Social Media Thumbnails - Platform-specific sizes and styles that boost visibility.",
+          "Captivating Video Titles - SEO-friendly and curiosity-driven titles for better reach.",
+          "SEO-Optimized Descriptions - Write-ups designed to rank and convert viewers into followers.",
+          "Creative Copy for Thumbnails - Punchy phrases that grab attention at a glance.",
+          "Consistent Branding Elements - Logos, colors, and styles that match your identity.",
+          "Custom Templates for Series - Maintain a uniform look for episodic or multi-part content."
+        ],
+        "conclusion": "Every scroll, click, and tap starts with a powerful first impression. Our writeups and thumbnails ensure your content not only stands out—but gets seen, read, and remembered."
+      }
     },
     {
       "title": "Business Card Design",
-      "description": "doloribus neque excepturi perferendis aspernatur, commodi inventore",
+      "description": "Leave a lasting impression with sleek, professional business card designs that speak volumes about your brand. Click to Learn More.",
       "longDescription": "This is long description",
-      "logo": "/servicesImage/Business Card Design.png"
+      "logo": "/servicesImage/Business Card Design.png",
+      "learnMore": {
+        "intro": "Empower your professional image with custom business card designs that leave a lasting impression and reinforce your brand identity.",
+        "points": [
+          "Standard & Premium Layouts - From minimal to bold, tailored to your brand personality.",
+          "Double-Sided Designs - Maximize space to include all your key contact info and services.",
+          "Custom Shapes & Sizes - Creative formats that break the traditional mold.",
+          "Logo Integration - Seamless incorporation of your brand identity.",
+          "QR Code Integration - Direct clients to your website, portfolio, or social media with a scan.",
+          "Industry-Specific Styles - Designs suited for corporate, creative, healthcare, tech, and more.",
+          "Print-Ready Files - High-resolution output optimized for any printer.",
+          "Digital Business Cards - Editable and shareable versions for online networking."
+        ],
+        "conclusion": "A business card isn't just a contact detail—it's your brand in someone's hand. We design cards that create strong first impressions and open doors to new opportunities."
+      }
     },
     {
       "title": "Customized forms of design and marketing",
-      "description": "doloribus neque excepturi perferendis aspernatur, commodi inventore",
+      "description": "Unlock limitless creative possibilities with customized design and marketing assets built using Adobe Illustrator. Click to Learn More.",
       "longDescription": "This is long description",
-      "logo": "/servicesImage/Customized forms of design and marketing.png"
+      "logo": "/servicesImage/Customized forms of design and marketing.png",
+      "learnMore": {
+        "intro": "Empower your business with customized design and marketing solutions tailored to your unique goals, driving brand growth and maximizing impact across all channels.",
+        "points": [
+          "Custom Logo Design - Unique, vector-based logos scalable for any platform.",
+          "Marketing Collateral - Flyers, brochures, banners, and more tailored to your brand goals.",
+          "Brand Pattern & Icon Sets - Original vector graphics to use across all your branding.",
+          "Packaging & Label Design - Product-focused designs that stand out on shelves.",
+          "Typography-Based Art - Beautiful, hand-crafted text styles and font treatments.",
+          "Custom Illustrations - Unique artwork for storytelling, branding, or product promotion.",
+          "Editable Templates - Reusable Illustrator files for social posts, presentations, or ads.",
+          "Print & Digital Versatility - All designs optimized for both screen and print use."
+        ],
+        "conclusion": "With Adobe Illustrator, we create highly customized, precise, and scalable designs that give your brand a polished, professional edge. Let your marketing assets be as unique as your business."
+      }
     }
   ]
 }

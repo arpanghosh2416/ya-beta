@@ -19,19 +19,20 @@ const Acheivement = () => {
         className="flex flex-col justify-between gap-y-10 py-16 md:flex-row md:gap-y-0"
       >
         <section className="flex w-full flex-col justify-center gap-y-2 md:w-[30%]">
-          <p className="font-poppins text-base uppercase text-primary">
+          <p className="text-primary-blue-ed font-poppins text-base uppercase">
             Our Acheivement
           </p>
           <h3 className="font-poppins text-[24px] font-bold leading-8 md:text-[32px] md:leading-10">
-            {"Check our best students "}
-            <span className="text-primary">To assure You</span>
+            {"Check our "}
+            <span className="text-primary-blue-ed">best students'</span>
+            {" achievements"}
           </h3>
           <a
             target="_blank"
             rel="noopener noreferrer"
             onClick={(e) => e.stopPropagation()}
             href={`https://api.whatsapp.com/send?phone=${whatsAppNumber}&text=${encodeURIComponent(
-              `Hello! I found your business on Young Architects`,
+              `Hello! I found your education details on Young Architects Website`,
             )}`}
             className="mb-2 flex w-[50%] items-center justify-center space-x-2 rounded-md bg-black/75 p-2 font-semibold"
           >
