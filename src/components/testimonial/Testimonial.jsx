@@ -89,7 +89,11 @@ const Testimonial = (props) => {
                 <article className="mx-auto flex w-[80%] flex-col gap-y-2">
                   <section>
                     <div className="flex h-28 w-28 items-center justify-center rounded-full bg-slate-400">
-                      <img src={testimonial.image} alt="" />
+                      <img
+                        src={testimonial.image}
+                        className="h-28 w-28 rounded-full object-cover"
+                        alt=""
+                      />
                       {/* <i className="text-3xl fa-solid fa-user"></i> */}
                     </div>
                   </section>

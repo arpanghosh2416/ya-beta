@@ -19,7 +19,7 @@ const Acheivement = () => {
         className="flex flex-col justify-between gap-y-10 py-16 md:flex-row md:gap-y-0"
       >
         <section className="flex w-full flex-col justify-center gap-y-2 md:w-[30%]">
-          <p className="text-primary-blue-ed font-poppins text-base uppercase">
+          <p className="font-poppins text-base uppercase text-primary-blue-ed">
             Our Acheivement
           </p>
           <h3 className="font-poppins text-[24px] font-bold leading-8 md:text-[32px] md:leading-10">
