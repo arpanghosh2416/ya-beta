@@ -2,7 +2,7 @@ import React from "react";
 import ServiceCards from "./ServiceCards";
 import { Container } from "../../components";
 import { ServiceWireImage } from "../../assets";
-import BookConsultationLink from "../BookConsultation/BookConsultationLink";
+import ButtonStyle from "../shared/buttons/ButtonStyle";
 
 const Service = (props) => {
   return (
@@ -19,18 +19,19 @@ const Service = (props) => {
                 {"business needs and grow consistently"}
               </span>
             </h3>
-            <p>
+            <span>
               Stay organised and improve. Streamline custom development,
               marketing, design and other business operations of your
               enterprise. Let us help enhance the bottom line of your business
               with our custom-made solutions.
-            </p>
+            </span>
+            <ButtonStyle> Know More</ButtonStyle>
           </section>
           <section className="flex w-full justify-center md:w-[40%]">
             <img
               className="w-[90%] object-contain"
               src={ServiceWireImage}
-              alt="hero-image"
+              alt="hero"
             />
           </section>
         </section>

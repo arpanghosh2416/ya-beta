@@ -1,31 +1,40 @@
-import React from "react";
-import { HeroImage } from "../../assets";
 import { Container, FlipCard } from "../../components";
-import BookConsultationLink from "../BookConsultation/BookConsultationLink";
+import ButtonStyle from "../shared/buttons/ButtonStyle";
 
 const Hero = (props) => {
   return (
     <Container>
       <article
         id="hero"
-        className="m-auto flex w-[90%] flex-col justify-between gap-6 pb-16 pt-[8rem] sm:w-[100%] md:flex-row"
+        className="m-auto flex w-[90%] flex-col justify-between gap-6 pb-16 pt-[8rem] sm:w-[100%] md:flex-row-reverse"
       >
-        <section className="flex w-full flex-col justify-center gap-y-2 text-white md:w-[40%]">
-          <h1 className="font-poppins text-[24px] font-bold leading-8 md:text-[35px] md:leading-10">
-            <span className="text-primary-blue">Welcome to</span> <br />
-            <span className="capitalize text-primary">YOUNG ARCHITECTS</span>
-          </h1>
-          <h2 className="mt-[1rem] font-poppins text-[16px] opacity-90 md:text-[18px]">
-            Young Architects is a dynamic IT virtual business redefining the
-            technology landscape. With talent, expertise and commitment to
-            excellence, we aim scale your business digitally with latest
-            technologies and AI.
-          </h2>
-          <BookConsultationLink />{" "}
-        </section>
-        <section className="flex w-full justify-center md:w-[60%]">
-          {/* <img src={HeroImage} alt="hero-image" /> */}
+        {/* FlipCard Section - Right on desktop, First on mobile */}
+        <section className="flex w-full justify-center md:w-[50%]">
           <FlipCard />
+        </section>
+
+        {/* Text Content Section - Left on desktop, Second on mobile */}
+        <section className="flex w-full flex-col justify-center gap-y-1 text-white md:w-[40%]">
+          <h1 className="font-poppins text-[25px] font-bold leading-8 md:text-[25px] md:leading-10">
+            <span className="capitalize text-primary">YOUNG ARCHITECTS</span>
+            <span> - </span> <br />
+            <span className="text-primary-blue">
+              {" "}
+              Best AI-Driven IT Solutions & Digital Transformation in Kolkata
+            </span>
+          </h1>
+          <h2 className="mt-[1rem] font-poppins text-[18px] opacity-90 md:mt-[2rem] md:text-[15px]">
+            <span>
+              A dynamic IT solutions with AI-driven digital consultancy
+              transforming the technology landscape, delivering cutting-edge
+              software development, digital transformation, automation, SEO, and
+              AI solutions to help businesses scale faster, enhance visibility,
+              and achieve sustainable growth.
+            </span>
+          </h2>
+          <a href="#about">
+            <ButtonStyle>Book Consultation</ButtonStyle>
+          </a>
         </section>
       </article>
     </Container>

@@ -1,43 +1,117 @@
-import React, { useRef, useImperativeHandle } from "react";
+import { useRef, useImperativeHandle, forwardRef } from "react";
 
-const SidebarMaybe = (props, ref) => {
+const MobileSidebar = forwardRef((props, ref) => {
   const sidebarRef = useRef(null);
+
+  // Navigation items - easy to modify
+  const navItems = [
+    { href: "#hero", label: "Home" },
+    { href: "#service", label: "Service" },
+    { href: "#work", label: "Work" },
+    { href: "#course", label: "Course" },
+    { href: "#about", label: "About" },
+  ];
 
   useImperativeHandle(ref, () => ({
     toggle: () => {
-      sidebarRef.current?.classList.toggle("translate-y-[-160px]");
-      sidebarRef.current?.classList.toggle("opacity-100");
-      if (sidebarRef.current?.classList.contains("opacity-100")) {
-        sidebarRef.current.classList.remove("z-[-1]");
-        sidebarRef.current.classList.add("z-[2]");
+      if (!sidebarRef.current) return;
+
+      const sidebar = sidebarRef.current;
+      const isCurrentlyOpen = sidebar.classList.contains("opacity-100");
+
+      if (isCurrentlyOpen) {
+        // Close sidebar
+        sidebar.classList.remove(
+          "opacity-100",
+          "translate-y-0",
+          "z-50",
+          "scale-100",
+        );
+        sidebar.classList.add(
+          "opacity-0",
+          "translate-y-[-20px]",
+          "-z-10",
+          "scale-95",
+          "pointer-events-none",
+        );
       } else {
-        sidebarRef.current.classList.remove("z-[2]");
-        sidebarRef.current.classList.add("z-[-1]");
+        // Open sidebar
+        sidebar.classList.remove(
+          "opacity-0",
+          "translate-y-[-20px]",
+          "-z-10",
+          "scale-95",
+          "pointer-events-none",
+        );
+        sidebar.classList.add(
+          "opacity-100",
+          "translate-y-0",
+          "z-50",
+          "scale-100",
+        );
       }
+    },
+    close: () => {
+      if (!sidebarRef.current) return;
+      const sidebar = sidebarRef.current;
+      sidebar.classList.remove(
+        "opacity-100",
+        "translate-y-0",
+        "z-50",
+        "scale-100",
+      );
+      sidebar.classList.add(
+        "opacity-0",
+        "translate-y-[-20px]",
+        "-z-10",
+        "scale-95",
+        "pointer-events-none",
+      );
+    },
+    open: () => {
+      if (!sidebarRef.current) return;
+      const sidebar = sidebarRef.current;
+      sidebar.classList.remove(
+        "opacity-0",
+        "translate-y-[-20px]",
+        "-z-10",
+        "scale-95",
+        "pointer-events-none",
+      );
+      sidebar.classList.add(
+        "opacity-100",
+        "translate-y-0",
+        "z-50",
+        "scale-100",
+      );
     },
   }));
 
   return (
-    <section
+    <aside
       ref={sidebarRef}
-      className="fixed right-[1rem] top-[250px] z-[-1] w-[40%] max-w-[200px] h-[20vh] min-h-[250px] bg-[#5d5c5ca1] duration-300 sm:w-[60%] md:hidden opacity-0 backdrop-blur-[5px] rounded-[10px] shadow-lg backdrop-brightness-50"
+      className="pointer-events-none fixed right-4 top-20 -z-10 h-[20vh] min-h-[250px] w-[40%] max-w-[200px] translate-y-[-20px] scale-95 rounded-xl bg-gray-800/80 opacity-0 shadow-xl backdrop-blur-md transition-all duration-300 ease-out sm:w-[60%] md:hidden"
+      role="navigation"
+      aria-label="Mobile navigation menu"
     >
-      <ul className="md:hidden text-[1.5rem] text-white flex flex-col justify-center items-center h-full w-full gap-[1rem]">
-        <li>
-          <a className="hover:text-primary-blue" href="#service">Service</a>
-        </li>
-        <li>
-          <a className="hover:text-primary-blue" href="#work">Work</a>
-        </li>
-        <li>
-          <a className="hover:text-primary-blue" href="#course">Course</a>
-        </li>
-        <li>
-          <a className="hover:text-primary-blue" href="#about">About</a>
-        </li>
-      </ul>
-    </section>
+      <nav className="h-full w-full p-4">
+        <ul className="flex h-full flex-col items-center justify-center gap-4">
+          {navItems.map((item) => (
+            <li key={item.href}>
+              <a
+                href={item.href}
+                className="block px-3 py-1 text-lg font-medium text-white transition-all duration-200 ease-in-out hover:scale-105 hover:text-blue-400 focus:rounded focus:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              >
+                {item.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </aside>
   );
-};
+});
 
-export default React.forwardRef(SidebarMaybe);
+MobileSidebar.displayName = "MobileSidebar";
+
+export default MobileSidebar;
