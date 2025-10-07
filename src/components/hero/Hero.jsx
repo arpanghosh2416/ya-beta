@@ -32,7 +32,7 @@ const Hero = (props) => {
               and achieve sustainable growth.
             </span>
           </h2>
-          <a href="#about">
+          <a href="https://calendly.com/yafoundations/45min">
             <ButtonStyle>Book Consultation</ButtonStyle>
           </a>
         </section>
