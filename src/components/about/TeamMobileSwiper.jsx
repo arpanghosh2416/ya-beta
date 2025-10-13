@@ -37,6 +37,7 @@ const TeamMobileSwiper = (props) => {
               </div>
               <img
                 src={student.image}
+                alt="Student_Testimonial"
                 className="h-full w-full object-cover object-center"
               />
             </div>

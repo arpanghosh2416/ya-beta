@@ -9,17 +9,17 @@ import css from "./Course.module.css";
 function renderModuleWithLogo(moduleText) {
   // Phrase-specific first (for "Spring Framework")
   const phraseLogos = {
-    "Spring Framework": "/coursesImage/spring-2.svg",
+    "Spring Framework": "https://youngarchitects.in/assets/coursesImage/spring-2.svg",
     // Add more phrases if needed
   };
   // Keyword-specific (single words)
   const keywordLogos = {
-    MongoDB: "/coursesImage/mongo.png",
-    Oracle: "/coursesImage/oracleDB.png",
-    Selenium: "/coursesImage/selenium.svg",
-    NodeJs: "/coursesImage/node.png",
-    ReactJs: "/coursesImage/react.png",
-    NextJs: "/coursesImage/next.webp",
+    MongoDB: "https://youngarchitects.in/assets/coursesImage/mongo.png",
+    Oracle: "https://youngarchitects.in/assets/coursesImage/oracleDB.png",
+    Selenium: "https://youngarchitects.in/assets/coursesImage/selenium.svg",
+    NodeJs: "https://youngarchitects.in/assets/coursesImage/node.png",
+    ReactJs: "https://youngarchitects.in/assets/coursesImage/react.png",
+    NextJs: "https://youngarchitects.in/assets/coursesImage/next.webp",
   };
 
   // 1. Check and handle phrase match first (e.g., "Spring Framework")
@@ -107,7 +107,7 @@ const CourseCards = (props) => {
               <div className="">{course.name}</div>
             </div>
             <div className="flex w-full items-center justify-end">
-              <img className="w-[3.2rem] sm:w-[3.8rem]" src={course.image} />
+              <img className="w-[3.2rem] sm:w-[3.8rem]" src={course.image} alt="course-images" />
             </div>
           </section>
         );
