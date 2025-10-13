@@ -4,7 +4,7 @@ import {
   TeamMobileSwiper,
   TeamDesktopSwiper,
 } from "../../components";
-import AcheivementCard from "./AcheivementCard";
+
 
 const whatsAppNumber = "+919883952010";
 

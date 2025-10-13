@@ -1,5 +1,5 @@
 import React from "react";
-import { logo2 } from "../../assets";
+
 
 const AcheivementCard = ({
   name = "Default name",
@@ -26,7 +26,7 @@ const AcheivementCard = ({
           />
         </div>
         <div className="absolute right-[-25px] top-[-30px]">
-          <img src={logo2} alt="YA logo" width="200px" height="200px" />
+          <img src="https://youngarchitects.in/assets/image/logo2.png" alt="YA logo" width="200px" height="200px" />
         </div>
       </div>
       <div className="absolute right-0 top-0 h-[70%] w-[200px] overflow-hidden rounded-[10px]">

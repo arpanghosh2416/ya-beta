@@ -15,7 +15,7 @@ const Work = (props) => {
   return (
     <Container>
       <article
-        id="work"
+        id="about"
         data-aos="fade-up"
         data-aos-delay="100"
         data-aos-duration="600"

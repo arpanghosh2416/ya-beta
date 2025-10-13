@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { works } from "../../../assets";
 import styles from "./MarketingComponent.module.css";
-import logo from "../../../assets/image/logo2.png";
 
 const MarketingComponent = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -10,8 +9,8 @@ const MarketingComponent = () => {
     description:
       "These are some marketing insights of this company which has had a digital business for over 5 years but started SEO for only 2 months and this is the result already.",
     longDescription: "This is long description",
-    logo: "/clientLogo/iwallp.png",
-    img: "/workImage/Marketing1.png",
+    logo: "https://youngarchitects.in/assets/clientLogo/iwallp.png",
+    img: "https://youngarchitects.in/assets/workImage/Marketing1.png",
   });
 
   const [imgAnim, setImgAnim] = useState(false);
@@ -53,7 +52,7 @@ const MarketingComponent = () => {
           >
             {activeInfo.description}
           </p>
-          {/* <p className={`text-white transition-opacity duration-300 ${textAnim ? styles.fadeAnimation : ""}`}>{activeInfo.longDescription}</p> */}
+          
         </div>
       </div>
 

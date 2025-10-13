@@ -1,13 +1,13 @@
 import { useState } from "react";
-import { logo, logo2, qr, click } from "../../assets";
+
 
 const FlipCard = ({
-  frontLogo = logo,
-  backLogo = logo2,
-  qrCode = qr,
+  frontLogo = "https://youngarchitects.in/assets/image/logo.png",
+  backLogo = "https://youngarchitects.in/assets/image/logo2.png",
+  qrCode = "https://youngarchitects.in/assets/image/qr.png",
   phoneNumbers = ["+91 9883952010", "+91 9804569051"],
   email = "yafoundations@gmail.com",
-  animationGif = click, // Add your GIF import here
+  animationGif = "https://youngarchitects.in/assets/image/clickhere.gif", // Add your GIF import here
 }) => {
   const [isFlipped, setIsFlipped] = useState(false);
 

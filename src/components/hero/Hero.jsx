@@ -5,7 +5,7 @@ const Hero = (props) => {
   return (
     <Container>
       <article
-        id="hero"
+        id="home"
         className="m-auto flex w-[90%] flex-col justify-between gap-6 pb-16 pt-[8rem] sm:w-[100%] md:flex-row-reverse"
       >
         {/* FlipCard Section - Right on desktop, First on mobile */}

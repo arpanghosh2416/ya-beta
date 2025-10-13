@@ -5,7 +5,7 @@ const About = () => {
   return (
     <Container>
       <article
-        id="about"
+        id="contact"
         data-aos="fade-up"
         data-aos-delay="100"
         data-aos-duration="600"
