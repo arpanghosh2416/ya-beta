@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import { team, students, Work1stImage } from "../../assets";
+import { students} from "../../assets";
 
 // import required modules
 import { Navigation, Autoplay } from "swiper/modules";

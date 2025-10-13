@@ -1,13 +1,7 @@
 import React from "react";
 import classNames from "classnames";
 import { Container } from "../../components";
-import {
-  Work1stImage,
-  Work2ndImage,
-  Work3rdImage,
-  Work4thImage,
-  Work5thImage,
-} from "../../assets";
+
 
 import css from "./Work.module.css";
 
@@ -42,23 +36,28 @@ const Work = (props) => {
         <section className="flex w-full flex-wrap items-center justify-center gap-6 md:w-[70%]">
           <img
             className={classNames("w-52", css.pentagonCardCategory2)}
-            src={Work1stImage}
+            src="https://youngarchitects.in/assets/image/about-image-1.png"
+            alt="Work 1 Description"
           />
           <img
             className={classNames("w-52", css.pentagonCardCategory2)}
-            src={Work2ndImage}
+            src="https://youngarchitects.in/assets/image/about-image-2.png"
+            alt="Work 2 Description"
           />
           <img
             className={classNames("w-52", css.pentagonCardCategory2)}
-            src={Work3rdImage}
+            src="https://youngarchitects.in/assets/image/about-image-3.png"
+            alt="Work 3 Description"
           />
           <img
             className={classNames("w-52", css.pentagonCardCategory1)}
-            src={Work4thImage}
+            src="https://youngarchitects.in/assets/image/about-image-4.png"
+            alt="Work 4 Description"
           />
           <img
             className={classNames("w-52", css.pentagonCardCategory1)}
-            src={Work5thImage}
+            src="https://youngarchitects.in/assets/image/about-image-5.png"
+            alt="Work 5 Description"
           />
         </section>
       </article>

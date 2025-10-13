@@ -1,6 +1,5 @@
 import React from "react";
 import { students } from "../../assets";
-import { Work1stImage } from "../../assets";
 
 // import required modules
 import { EffectCards } from "swiper/modules";

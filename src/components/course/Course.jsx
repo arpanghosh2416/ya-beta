@@ -1,7 +1,6 @@
 import React from "react";
 import CourseCards from "./CourseCards";
 import { Container } from "../../components";
-// import { StudentGIF, OldLogoImage } from "../../assets";
 
 const Course = (props) => {
   return (
@@ -16,7 +15,7 @@ const Course = (props) => {
         <section className="flex flex-col md:flex-row">
           <section className="relative flex w-full flex-col justify-center gap-y-2 text-white md:w-[40%]">
             <div className="lg:absolute lg:left-0 lg:top-0 lg:pt-12">
-              <img className="w-20 lg:w-32" src="" />
+              <img className="w-20 lg:w-32" src="https://youngarchitects.in/assets/image/old-logo.png" alt="Young-Architects-Education-Cell" />
             </div>
             <h1 className="font-poppins text-[24px] font-bold leading-8 md:text-[35px] md:leading-10">
               {"Experience the concepts implement "}
@@ -27,7 +26,7 @@ const Course = (props) => {
             </h2>
           </section>
           <section className="flex w-full justify-center md:w-[60%]">
-            <img src={StudentGIF} />
+            <img src= "https://youngarchitects.in/assets/gif/student.gif" alt="Young-Arcitects-Education-Animation" />
           </section>
         </section>
         <CourseCards />

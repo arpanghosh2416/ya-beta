@@ -1,5 +1,4 @@
 import React from "react";
-import { BrandLogo } from "../../assets";
 import { Container } from "../../components";
 
 const Footer = (props) => {
@@ -8,7 +7,7 @@ const Footer = (props) => {
       <Container>
         <article className="py-8 sm:py-16">
           <a href="#hero">
-            <img className="h-[3rem] cursor-pointer" alt="YA-logo" src={BrandLogo} />
+            <img className="h-[3rem] cursor-pointer" alt="YA-logo" src="https://youngarchitects.in/assets/logo/brandlogo.png" />
           </a>
           <div className="my-10 h-[1px] w-full bg-secondary-light bg-opacity-50"></div>
           <section className="flex flex-col items-center justify-between gap-4 sm:flex-row">

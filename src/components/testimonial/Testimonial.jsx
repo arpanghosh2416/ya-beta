@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import classNames from "classnames";
 import { Container } from "../../components";
-import { testimonials, QuoteImage, LargeQuoteImage } from "../../assets";
+import { testimonials} from "../../assets";
 
 // import required modules
 import { Autoplay, Navigation } from "swiper/modules";
@@ -34,7 +34,7 @@ const Testimonial = (props) => {
       <article id = "testimonials"
         className={classNames(css.root, "py-16")}
         style={{
-          backgroundImage: `url(${LargeQuoteImage})`,
+          backgroundImage: `url(https://youngarchitects.in/assets/image/large-quote.png)`,
         }}
       >
         <section className="mb-6 flex justify-center">
@@ -104,14 +104,14 @@ const Testimonial = (props) => {
                   </section>
                   <p className="mt-6 text-xl italic">
                     <img
-                      src={QuoteImage}
-                      alt=""
+                      src="https://youngarchitects.in/assets/image/quote.png"
+                      alt="Testimonial-Start"
                       className="relative -top-2.5 inline w-4"
                     />
                     <span>{testimonial.quote}</span>
                     <img
-                      src={QuoteImage}
-                      alt=""
+                       src="https://youngarchitects.in/assets/image/quote.png"
+                      alt="Testimonial-End"
                       className="relative -top-2.5 inline w-4 rotate-180"
                     />
                   </p>

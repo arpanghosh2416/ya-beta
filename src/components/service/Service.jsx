@@ -1,7 +1,6 @@
 import React from "react";
 import ServiceCards from "./ServiceCards";
 import { Container } from "../../components";
-import { ServiceWireImage } from "../../assets";
 import ButtonStyle from "../shared/buttons/ButtonStyle";
 
 const Service = (props) => {
@@ -32,8 +31,8 @@ const Service = (props) => {
           <section className="flex w-full justify-center md:w-[40%]">
             <img
               className="w-[90%] object-contain"
-              src={ServiceWireImage}
-              alt="hero"
+              src = "https://youngarchitects.in/assets/image/service-wire.png"
+              alt="Young-Architects-Service-Design"
             />
           </section>
         </section>
