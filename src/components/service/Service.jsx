@@ -26,12 +26,12 @@ const Service = (props) => {
             </span>
             {/* <a href="/"> */}
             <ButtonStyle>Coming Soon</ButtonStyle>
-          {/* </a> */}
+            {/* </a> */}
           </section>
           <section className="flex w-full justify-center md:w-[40%]">
             <img
               className="w-[90%] object-contain"
-              src = "https://youngarchitects.in/assets/image/service-wire.png"
+              src="https://youngarchitects.in/assets/image/service-wire.webp"
               alt="Young-Architects-Service-Design"
             />
           </section>

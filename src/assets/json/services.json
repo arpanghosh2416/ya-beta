@@ -4,7 +4,7 @@
       "title": "Instagram Marketing",
       "description": "Elevate your brand's online presence with Instagram - the perfect platform to engage and attract your target audience. Click to know more.",
       "longDescription": "This is long description",
-      "logo": "https://youngarchitects.in/assets/servicesImage/Instagram_marketing.png",
+      "logo": "https://youngarchitects.in/assets/servicesImage/Instagram_marketing.webp",
       "learnMore": {
         "intro": "We help businesses showcase their brand visually, engage audiences, and drive conversions through strategic Instagram marketing.",
         "points": [
@@ -20,7 +20,7 @@
       "title": "Facebook Marketing",
       "description": "Elevate your brand's online presence with Facebook - an well versed platform to engage and attract your target audience. Click to know more.",
       "longDescription": "This is long description",
-      "logo": "https://youngarchitects.in/assets/servicesImage/Facebook_marketing.png",
+      "logo": "https://youngarchitects.in/assets/servicesImage/Facebook_marketing.webp",
       "learnMore": {
         "intro": "We help businesses showcase their brand visually, engage audiences, and drive conversions through strategic Facebook marketing.",
         "points": [
@@ -36,7 +36,7 @@
       "title": "LinkedIn Marketing",
       "description": "Boost your professional presence and build a strong network with LinkedIn, the ultimate platform for business connections. Click to know more.",
       "longDescription": "This is long description",
-      "logo": "https://youngarchitects.in/assets/servicesImage/LinkedIn_Marketing.png",
+      "logo": "https://youngarchitects.in/assets/servicesImage/LinkedIn_Marketing.webp",
       "learnMore": {
         "intro": "We help businesses build a professional presence, foster connections, and generate quality leads through LinkedIn’s powerful networking platform.",
         "points": [
@@ -52,7 +52,7 @@
       "title": "YouTube Marketing",
       "description": "Empower your brand with YouTube marketing - the ultimate platform to connect, engage, and convert your audience through compelling video content. Click to Learn More.",
       "longDescription": "This is long description",
-      "logo": "https://youngarchitects.in/assets/servicesImage/Youtube_Marketing.png",
+      "logo": "https://youngarchitects.in/assets/servicesImage/Youtube_Marketing.webp",
       "learnMore": {
         "intro": "We help businesses create, optimize, and promote engaging video content that drives brand awareness and accelerates conversions.",
         "points": [
@@ -71,7 +71,7 @@
       "title": "Local SEO and Website SEO",
       "description": "Get Organic Customers without spending money on Ads. Whether you want to rank in Google Maps or on the First Page of GOOGLE. Click to Learn More.",
       "longDescription": "This is long description",
-      "logo": "https://youngarchitects.in/assets/servicesImage/Local_and_website_seo.png",
+      "logo": "https://youngarchitects.in/assets/servicesImage/Local_and_website_seo.webp",
       "learnMore": {
         "intro": "We help businesses get found locally in Maps, and also strategise them to rank in Google Search Pages, that maximize engagement and drive growth.",
         "points": [
@@ -87,7 +87,7 @@
       "title": "Marketing & Content Strategy Consultancy",
       "description": "Expand your digital presence with our all-in-one marketing solutions designed to generate leads and improve online visibility. Click to Learn More.",
       "longDescription": "This is long description",
-      "logo": "https://youngarchitects.in/assets/servicesImage/Marketing_and_content_strategy_consultancy.png",
+      "logo": "https://youngarchitects.in/assets/servicesImage/Marketing_and_content_strategy_consultancy.webp",
       "learnMore": {
         "intro": "We provide so much more and you can always book your calls with us for consultancy. We provide unique solutions as we have our own CRM tool so your data is safe and your marketing solutions get optimized.",
         "points": [
@@ -109,7 +109,7 @@
       "title": "AI Development & Integration",
       "description": "Transform your business with AI development and integration, leveraging cutting-edge technology to enhance efficiency and drive innovation. Click to Learn More.",
       "longDescription": "This is long description",
-      "logo": "https://youngarchitects.in/assets/servicesImage/AI_development_and_integrations.png",
+      "logo": "https://youngarchitects.in/assets/servicesImage/AI_development_and_integrations.webp",
       "learnMore": {
         "intro": "Empower your business by seamlessly integrating AI into your existing workflows and digital assets, delivering intelligent, future-ready solutions tailored to your specific requirements.",
         "points": [
@@ -127,7 +127,7 @@
       "title": "Custom Software Design",
       "description": "Drive business transformation with custom software design, leveraging purpose-built solutions to optimize operations and accelerate growth. Click to Learn More.",
       "longDescription": "This is long description",
-      "logo": "https://youngarchitects.in/assets/servicesImage/Custom_software_design.png",
+      "logo": "https://youngarchitects.in/assets/servicesImage/Custom_software_design.webp",
       "learnMore": {
         "intro": "Empower your organization with bespoke software solutions engineered to streamline your operations, enhance efficiency, and scale with your evolving business requirements.",
         "points": [
@@ -145,7 +145,7 @@
       "title": "Custom App Development",
       "description": "Accelerate your growth with custom app development—delivering intuitive, high-performance solutions for web and mobile. Click to Learn More.",
       "longDescription": "This is long description",
-      "logo": "https://youngarchitects.in/assets/servicesImage/Custom_app_development.png",
+      "logo": "https://youngarchitects.in/assets/servicesImage/Custom_app_development.webp",
       "learnMore": {
         "intro": "Build powerful, intuitive applications tailored to your business objectives, delivering seamless experiences across all devices.",
         "points": [
@@ -163,7 +163,7 @@
       "title": "Custom Web Development",
       "description": "Elevate your digital presence with custom web development, delivering responsive, scalable, and secure solutions that drive engagement and support your business growth. Click to Learn More.",
       "longDescription": "This is long description",
-      "logo": "https://youngarchitects.in/assets/servicesImage/Custom_web_development.png",
+      "logo": "https://youngarchitects.in/assets/servicesImage/Custom_web_development.webp",
       "learnMore": {
         "intro": "Create high-performance, visually stunning websites tailored to your brand and business needs.",
         "points": [
@@ -181,7 +181,7 @@
       "title": "API Development",
       "description": "Streamline your business operations with robust API development, enabling effortless connectivity, data exchange, and integration across platforms. Click to Learn More.",
       "longDescription": "This is long description",
-      "logo": "https://youngarchitects.in/assets/servicesImage/API_development.png",
+      "logo": "https://youngarchitects.in/assets/servicesImage/API_development.webp",
       "learnMore": {
         "intro": "Design and deploy secure, high-performance APIs to power seamless integrations and enable scalable digital ecosystems—even if you already have an existing frontend.",
         "points": [
@@ -199,7 +199,7 @@
       "title": "Saas CRM Automations",
       "description": "Streamline customer management and boost growth with SaaS CRM automations powered by intelligent workflows. Click to Learn More.",
       "longDescription": "This is long description",
-      "logo": "https://youngarchitects.in/assets/servicesImage/Saas_CRM_Automations.png",
+      "logo": "https://youngarchitects.in/assets/servicesImage/SaaS_CRM_Automations.webp",
       "learnMore": {
         "intro": "Automate your sales, marketing, and support processes with intelligent SaaS CRM solutions, driving efficiency and growth at every customer touchpoint.",
         "points": [
@@ -217,7 +217,7 @@
       "title": "Enterprise Software Development",
       "description": "Transform your business with enterprise software development, delivering robust, custom solutions that optimize performance and support large-scale growth. Click to Learn More.",
       "longDescription": "This is long description",
-      "logo": "https://youngarchitects.in/assets/servicesImage/Enterprise_software_development.png",
+      "logo": "https://youngarchitects.in/assets/servicesImage/Enterprise_software_development.webp",
       "learnMore": {
         "intro": "Empower your organization with scalable, secure enterprise software built to streamline operations and drive digital transformation.",
         "points": [
@@ -237,7 +237,7 @@
       "title": "Social Media Poster Design",
       "description": "Stand out online with scroll-stopping social media posters crafted to reflect your brand's identity and engage your audience. Click to Learn More.",
       "longDescription": "This is long description",
-      "logo": "https://youngarchitects.in/assets/servicesImage/Social_Media_and_Event_Poster_Design.png",
+      "logo": "https://youngarchitects.in/assets/servicesImage/Social_Media_and_Event_Poster_Design.webp",
       "learnMore": {
         "intro": "Empower your brand with impactful social media poster designs that boost visibility and maximize audience engagement across digital channels.",
         "points": [
@@ -257,7 +257,7 @@
       "title": "Event Poster Design",
       "description": "Promote your events with striking poster designs that capture attention and drive attendance, both online and offline. Click to Learn More.",
       "longDescription": "This is long description",
-      "logo": "https://youngarchitects.in/assets/servicesImage/Social_Media_and_Event_Poster_Design.png",
+      "logo": "https://youngarchitects.in/assets/servicesImage/Social_Media_and_Event_Poster_Design.webp",
       "learnMore": {
         "intro": "Empower your event with compelling poster designs that capture attention and drive participation across every promotional channel.",
         "points": [
@@ -277,7 +277,7 @@
       "title": "Front Cover Design",
       "description": "Make a powerful first impression with professionally crafted front cover designs for brochures, reports, presentations, and eBooks. Click to Learn More.",
       "longDescription": "This is long description",
-      "logo": "https://youngarchitects.in/assets/servicesImage/Magazine_cover_design.png",
+      "logo": "https://youngarchitects.in/assets/servicesImage/Magazine_cover_design.webp",
       "learnMore": {
         "intro": "Empower your publication with striking front cover designs that captivate your audience and reflect your brand's identity from the very first glance.",
         "points": [
@@ -297,7 +297,7 @@
       "title": "Video & Image Editing",
       "description": "Transform raw visuals into polished content with professional video and image editing services that elevate your brand. Click to Learn More.",
       "longDescription": "This is long description",
-      "logo": "https://youngarchitects.in/assets/servicesImage/Video_and_Image_Editing.png",
+      "logo": "https://youngarchitects.in/assets/servicesImage/Video_and_Image_Editing.webp",
       "learnMore": {
         "intro": "Empower your publication with striking front cover designs that captivate your audience and reflect your brand's identity from the very first glance.",
         "points": [
@@ -317,7 +317,7 @@
       "title": "Writeups & Thumbnail Design",
       "description": "Get compelling write ups and eye-catching thumbnails that increase clicks, views, and engagement across all digital platforms. Click to Learn More.",
       "longDescription": "This is long description",
-      "logo": "https://youngarchitects.in/assets/servicesImage/Write_ups_and_thumbnail_design.png",
+      "logo": "https://youngarchitects.in/assets/servicesImage/Write_ups_and_thumbnail_design.webp",
       "learnMore": {
         "intro": "Empower your content with compelling writeups and captivating thumbnail designs that boost engagement and drive audience interaction across digital platforms.",
         "points": [
@@ -337,7 +337,7 @@
       "title": "Business Card Design",
       "description": "Leave a lasting impression with sleek, professional business card designs that speak volumes about your brand. Click to Learn More.",
       "longDescription": "This is long description",
-      "logo": "https://youngarchitects.in/assets/servicesImage/Business_Card_Design.png",
+      "logo": "https://youngarchitects.in/assets/servicesImage/Business_Card_Design.webp",
       "learnMore": {
         "intro": "Empower your professional image with custom business card designs that leave a lasting impression and reinforce your brand identity.",
         "points": [
@@ -357,7 +357,7 @@
       "title": "Customized forms of design and marketing",
       "description": "Unlock limitless creative possibilities with customized design and marketing assets built using Adobe Illustrator. Click to Learn More.",
       "longDescription": "This is long description",
-      "logo": "https://youngarchitects.in/assets/servicesImage/Customized_forms_of_design_and_marketing.png",
+      "logo": "https://youngarchitects.in/assets/servicesImage/Customized_forms_of_design_and_marketing.webp",
       "learnMore": {
         "intro": "Empower your business with customized design and marketing solutions tailored to your unique goals, driving brand growth and maximizing impact across all channels.",
         "points": [

@@ -35,6 +35,14 @@ const Hero = (props) => {
           <a href="https://calendly.com/yafoundations/45min">
             <ButtonStyle>Book Consultation</ButtonStyle>
           </a>
+          <a
+            href="https://youngarchitects.in/assets/YA_Policy.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4"
+          >
+            <ButtonStyle>View Policy</ButtonStyle>
+          </a>
         </section>
       </article>
     </Container>

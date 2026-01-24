@@ -2,7 +2,6 @@ import React from "react";
 import classNames from "classnames";
 import { Container } from "../../components";
 
-
 import css from "./Work.module.css";
 
 const Work = (props) => {
@@ -36,27 +35,27 @@ const Work = (props) => {
         <section className="flex w-full flex-wrap items-center justify-center gap-6 md:w-[70%]">
           <img
             className={classNames("w-52", css.pentagonCardCategory2)}
-            src="https://youngarchitects.in/assets/image/about-image-1.png"
+            src="https://youngarchitects.in/assets/image/about-image-1.webp"
             alt="Work 1 Description"
           />
           <img
             className={classNames("w-52", css.pentagonCardCategory2)}
-            src="https://youngarchitects.in/assets/image/about-image-2.png"
+            src="https://youngarchitects.in/assets/image/about-image-2.webp"
             alt="Work 2 Description"
           />
           <img
             className={classNames("w-52", css.pentagonCardCategory2)}
-            src="https://youngarchitects.in/assets/image/about-image-3.png"
+            src="https://youngarchitects.in/assets/image/about-image-3.webp"
             alt="Work 3 Description"
           />
           <img
             className={classNames("w-52", css.pentagonCardCategory1)}
-            src="https://youngarchitects.in/assets/image/about-image-4.png"
+            src="https://youngarchitects.in/assets/image/about-image-4.webp"
             alt="Work 4 Description"
           />
           <img
             className={classNames("w-52", css.pentagonCardCategory1)}
-            src="https://youngarchitects.in/assets/image/about-image-5.png"
+            src="https://youngarchitects.in/assets/image/about-image-5.webp"
             alt="Work 5 Description"
           />
         </section>

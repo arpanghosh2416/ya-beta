@@ -9,14 +9,13 @@ const Navbar = (props) => {
     setIsOpen(!isOpen);
   };
 
-    const navItems = [
+  const navItems = [
     { link: "#home", label: "Home" },
     { link: "#services", label: "Our Services" },
     { link: "#about", label: "About Us" },
     { link: "#work", label: "Our Works" },
     { link: "#course", label: "Upskill Courses" },
     { link: "#contact", label: "Contact Us" },
-    
   ];
 
   return (
@@ -24,7 +23,7 @@ const Navbar = (props) => {
       <HashLink smooth to="#home">
         <img
           className="my-[0.5rem] h-[3rem] cursor-pointer"
-          src="https://youngarchitects.in/assets/logo/brandlogo.png"
+          src="https://youngarchitects.in/assets/logo/brandlogo.webp"
           alt="Young-Architects"
         />
       </HashLink>
@@ -32,7 +31,9 @@ const Navbar = (props) => {
         <ul className="hidden gap-x-8 text-lg text-white md:flex">
           {navItems.map((item) => (
             <li key={item.href}>
-              <HashLink smooth to={item.link}
+              <HashLink
+                smooth
+                to={item.link}
                 className="block px-3 py-1 text-lg font-medium text-white transition-all duration-200 ease-in-out hover:scale-105 hover:text-blue-400 focus:rounded focus:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400"
               >
                 {item.label}
