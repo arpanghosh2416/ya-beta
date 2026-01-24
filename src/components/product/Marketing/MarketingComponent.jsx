@@ -9,8 +9,8 @@ const MarketingComponent = () => {
     description:
       "These are some marketing insights of this company which has had a digital business for over 5 years but started SEO for only 2 months and this is the result already.",
     longDescription: "This is long description",
-    logo: "https://youngarchitects.in/assets/clientLogo/iwallp.png",
-    img: "https://youngarchitects.in/assets/workImage/Marketing1.png",
+    logo: "https://youngarchitects.in/assets/clientLogo/iwallp.webp",
+    img: "https://youngarchitects.in/assets/workImage/Marketing1.webp",
   });
 
   const [imgAnim, setImgAnim] = useState(false);
