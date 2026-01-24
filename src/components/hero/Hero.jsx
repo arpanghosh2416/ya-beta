@@ -32,17 +32,19 @@ const Hero = (props) => {
               and achieve sustainable growth.
             </span>
           </h2>
-          <a href="https://calendly.com/yafoundations/45min">
-            <ButtonStyle>Book Consultation</ButtonStyle>
-          </a>
-          <a
-            href="https://youngarchitects.in/assets/YA_Policy.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-4"
-          >
-            <ButtonStyle>View Policy</ButtonStyle>
-          </a>
+          <div className="flex flex-row gap-4 items-center">
+            <a href="https://calendly.com/yafoundations/45min" className="flex-1">
+              <ButtonStyle>Book Consultation</ButtonStyle>
+            </a>
+            <a
+              href="https://youngarchitects.in/assets/YA_Policy.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-1"
+            >
+              <ButtonStyle>View Policy</ButtonStyle>
+            </a>
+          </div>
         </section>
       </article>
     </Container>
