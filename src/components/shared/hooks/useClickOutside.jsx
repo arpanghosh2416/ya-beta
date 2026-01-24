@@ -1,18 +1,24 @@
 import { useEffect, useRef } from "react";
 
 export default function useClickOutside(callbackFn) {
-    let domNodeRef = useRef()
+  const domNodeRef = useRef(null);
+  const callbackRef = useRef(callbackFn);
 
-    useEffect(() => {
-        let handler = (event) => {
-            if (!domNodeRef.current?.contains(event.target)) {
-                callbackFn()
-            }
-        }
-        document.addEventListener("mousedown", handler)
-        return () => {
-            document.removeEventListener("mousedown", handler)
-        }
-    }, [])
-    return domNodeRef
+  // keep latest callback without re-binding the event listener
+  useEffect(() => {
+    callbackRef.current = callbackFn;
+  }, [callbackFn]);
+
+  useEffect(() => {
+    const handler = (event) => {
+      if (!domNodeRef.current?.contains(event.target)) {
+        callbackRef.current?.();
+      }
+    };
+
+    document.addEventListener("mousedown", handler);
+    return () => document.removeEventListener("mousedown", handler);
+  }, []);
+
+  return domNodeRef;
 }
