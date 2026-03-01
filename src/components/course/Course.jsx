@@ -17,7 +17,7 @@ const Course = (props) => {
             <div className="lg:absolute lg:left-0 lg:top-0 lg:pt-12">
               <img
                 className="w-20 lg:w-32"
-                src="https://youngarchitects.in/assets/image/old-logo.png"
+                src="https://youngarchitects.in/assets/image/old-logo.webp"
                 alt="Young-Architects-Education-Cell"
               />
             </div>
@@ -36,7 +36,7 @@ const Course = (props) => {
           </section>
           <section className="flex w-full justify-center md:w-[60%]">
             <img
-              src="https://youngarchitects.in/assets/gif/student.webp"
+              src="https://youngarchitects.in/assets/gif/student.gif"
               alt="Young-Arcitects-Education-Animation"
             />
           </section>

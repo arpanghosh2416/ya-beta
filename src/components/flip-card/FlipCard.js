@@ -6,7 +6,7 @@ const FlipCard = ({
   qrCode = "https://youngarchitects.in/assets/image/qr.webp",
   phoneNumbers = ["+91 9883952010", "+91 9804569051"],
   email = "yafoundations@gmail.com",
-  animationGif = "https://youngarchitects.in/assets/image/clickhere.webp", // Add your GIF import here
+  animationGif = "https://youngarchitects.in/assets/gif/click_here2.gif", // Add your GIF import here
 }) => {
   const [isFlipped, setIsFlipped] = useState(false);
 
