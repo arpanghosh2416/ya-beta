@@ -15,10 +15,11 @@
   transform: perspective(2000px);
   border: 6px solid transparent;
 
-  &:hover {
-    border: 6px solid var(--bg-primary);
-    transition: border 0.5s ease-in-out;
-  }
+}
+
+.card:hover {
+  border: 6px solid var(--bg-primary);
+  transition: border 0.5s ease-in-out;
 }
 
 .cardImage {
@@ -41,22 +42,22 @@
   grid-area: text;
   margin: 15px;
   transform: translateZ(30px);
+}
 
-  & h2 {
-    text-align: center;
-    margin-top: 0px;
-    margin-bottom: 5px;
-    font-size: 28px;
-    animation: slide-in-right 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
-  }
+.cardText h2 {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  font-size: 28px;
+  animation: slide-in-right 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
 
-  & p {
-    margin-bottom: 15px;
-    color: gray;
-    font-size: 14px;
-    font-weight: 300;
-    animation: slide-in-bottom 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  }
+.cardText p {
+  margin-bottom: 15px;
+  color: gray;
+  font-size: 14px;
+  font-weight: 300;
+  animation: slide-in-bottom 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 @keyframes slide-in-right {

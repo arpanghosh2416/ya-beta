@@ -10,12 +10,13 @@ const Navbar = (props) => {
   };
 
   const navItems = [
-    { link: "#home", label: "Home" },
-    { link: "#services", label: "Our Services" },
-    { link: "#about", label: "About Us" },
-    { link: "#work", label: "Our Works" },
-    { link: "#course", label: "Upskill Courses" },
-    { link: "#contact", label: "Contact Us" },
+    { link: "/#home", label: "Home" },
+    { link: "/#services", label: "Our Services" },
+    { link: "/#about", label: "About Us" },
+    { link: "/#work", label: "Our Works" },
+    { link: "/#course", label: "Upskill Courses" },
+    { link: "/#contact", label: "Contact Us" },
+    { link: "/case-studies", label: "Case-Studies" },
   ];
 
   return (
