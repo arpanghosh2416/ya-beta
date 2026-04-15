@@ -3,7 +3,13 @@ import { Link } from "react-router-dom";
 import { motion, useScroll, useTransform } from "framer-motion";
 import logoMap from "../logoMap";
 
-const HeroSection = ({ hero, clientName, background, secondaryColor, slug }) => {
+const HeroSection = ({
+  hero,
+  clientName,
+  background,
+  secondaryColor,
+  slug,
+}) => {
   const mashupLogo = logoMap[slug];
   const containerRef = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -17,12 +23,12 @@ const HeroSection = ({ hero, clientName, background, secondaryColor, slug }) => 
   return (
     <section
       ref={containerRef}
-      className="relative flex h-[90vh] min-h-[600px] w-full items-end justify-center overflow-hidden"
+      className="relative flex min-h-screen w-full flex-col items-center justify-end overflow-hidden pb-12 pt-12 md:justify-center md:pb-20"
       style={{ backgroundColor: background || "#050505" }}
       id="case-hero"
     >
       {/* Fixed Parallax Background */}
-      <motion.div 
+      <motion.div
         style={{ y: yPos }}
         className="absolute inset-0 h-full w-full"
       >
@@ -53,31 +59,45 @@ const HeroSection = ({ hero, clientName, background, secondaryColor, slug }) => 
           to="/case-studies"
           className="group flex items-center gap-3 rounded-full border border-white/10 bg-black/20 px-5 py-2.5 text-xs font-bold uppercase tracking-widest text-white backdrop-blur-md transition-all hover:bg-white hover:text-black"
         >
-          <svg className="h-4 w-4 transition-transform group-hover:-translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+          <svg
+            className="h-4 w-4 transition-transform group-hover:-translate-x-1"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={2}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M10 19l-7-7m0 0l7-7m-7 7h18"
+            />
           </svg>
           Back
         </Link>
       </motion.div>
 
       {/* Hero Content */}
-      <motion.div 
+      <motion.div
         style={{ opacity }}
-        className="relative z-10 w-full px-6 pb-20 md:px-12 lg:px-20 text-center flex flex-col items-center"
+        className="relative z-10 flex w-full flex-col items-center pt-0 md:pt-10"
       >
-        <div className="mx-auto max-w-6xl">
-          {/* Mashup Logo */}
-          {mashupLogo && (
-            <motion.img
+        {/* Mashup Logo (Edge-to-Edge Banner) */}
+        {mashupLogo && (
+          <motion.div
+            className="mb-12 flex w-full justify-center px-4 md:mb-16 md:px-8"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+          >
+            <img
               src={mashupLogo}
               alt={`${clientName} × Young Architects`}
-              className="mb-8 h-12 w-auto sm:h-16 md:h-20 mx-auto"
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+              className="h-auto max-h-[35vh] w-full max-w-[1600px] object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)] md:max-h-[40vh]"
             />
-          )}
+          </motion.div>
+        )}
 
+        <div className="mx-auto w-full max-w-6xl px-6 text-center md:px-12 lg:px-20">
           {/* Tagline */}
           <motion.div
             className="mb-6 flex items-center justify-center gap-4"
