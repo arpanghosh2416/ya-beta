@@ -1,181 +1,174 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import { caseDetails } from "../../assets/json/case";
+import {
+  HeroSection,
+  SectionBlock,
+  CtaBanner,
+  PainPointCard,
+  OutcomeSection,
+  TestimonialBlock,
+  FaqAccordion,
+  ContactFormSection,
+} from "./components";
 
 const CaseStudy = () => {
   const { slug } = useParams();
   const item = caseDetails.find((c) => c.slug === slug);
 
+  // 404 — Case study not found
   if (!item) {
     return (
-      <div className="flex min-h-screen items-center justify-center">
-        <p className="text-xl text-gray-500">Case study not found.</p>
+      <div className="flex min-h-screen flex-col items-center justify-center bg-gray-50 px-6">
+        <motion.div
+          className="text-center"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-primary/10">
+            <svg
+              className="h-10 w-10 text-primary"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={1.5}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+          </div>
+          <h1 className="mb-2 font-poppins text-3xl font-bold text-gray-900">
+            Case Study Not Found
+          </h1>
+          <p className="mb-8 text-gray-500">
+            The case study you're looking for doesn't exist or has been removed.
+          </p>
+          <Link
+            to="/case-studies"
+            className="inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 text-sm font-bold text-white transition-all duration-300 hover:shadow-lg hover:brightness-110"
+          >
+            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+            </svg>
+            Back to Case Studies
+          </Link>
+        </motion.div>
       </div>
     );
   }
 
+  const accent = item.secondaryColor || "#BE3887";
+
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white" id={`case-study-${slug}`}>
+      {/* ───────── HERO ───────── */}
+      <HeroSection
+        hero={item.hero}
+        clientName={item.clientName}
+        background={item.background}
+        secondaryColor={accent}
+        slug={slug}
+      />
 
-      {/* Hero */}
-      <div
-        className="relative flex h-72 items-end overflow-hidden md:h-96"
-        style={{ backgroundColor: item.background, backgroundImage: `url(${item.hero.image})`, backgroundSize: "cover", backgroundPosition: "center" }}
+      {/* ───────── TOP CTA (YA + Client buttons) ───────── */}
+      <CtaBanner variant="dual" data={item.ctaTop} accentColor={accent} />
+
+      {/* ───────── MULTI-ENTITY SERVICE ───────── */}
+      {item.multiEntityService && (
+        <SectionBlock
+          label="Our Approach"
+          title={item.multiEntityService.title}
+          description={item.multiEntityService.description}
+          accentColor={accent}
+          id="case-approach"
+        />
+      )}
+
+      {/* ───────── CTA AFTER SERVICE ───────── */}
+      <CtaBanner variant="inline" data={item.ctaAfterService} accentColor={accent} />
+
+      {/* ───────── DIFFERENT ENTITY NEEDS ───────── */}
+      {item.differentEntityNeeds && (
+        <SectionBlock
+          label="The Challenge"
+          title={item.differentEntityNeeds.title}
+          description={item.differentEntityNeeds.description}
+          accentColor={accent}
+          id="case-challenge"
+          className="bg-gray-50"
+        />
+      )}
+
+      {/* ───────── CTA AFTER DIFFERENT NEEDS ───────── */}
+      <CtaBanner
+        variant="inline"
+        data={item.ctaAfterDifferentNeeds}
+        accentColor={accent}
+      />
+
+      {/* ───────── PAIN POINTS & SOLUTIONS ───────── */}
+      {item.painPointsAndSolutions && (
+        <SectionBlock
+          label="Pain Points & Solutions"
+          title={item.painPointsAndSolutions.title}
+          description={item.painPointsAndSolutions.intro}
+          accentColor={accent}
+          id="case-pain-solutions"
+        >
+          <div className="mt-8 space-y-5">
+            {item.painPointsAndSolutions.entities.map((entity, i) => (
+              <PainPointCard
+                key={i}
+                entity={entity}
+                index={i}
+                accentColor={accent}
+              />
+            ))}
+          </div>
+        </SectionBlock>
+      )}
+
+      {/* ───────── URGENCY MID CTA ───────── */}
+      <CtaBanner variant="full" data={item.ctaUrgencyMid} accentColor={accent} />
+
+      {/* ───────── OUTCOMES ───────── */}
+      <OutcomeSection outcomes={item.outcomes} accentColor={accent} />
+
+      {/* ───────── CLIENT REMARKS / TESTIMONIAL ───────── */}
+      <TestimonialBlock clientRemarks={item.clientRemarks} accentColor={accent} />
+
+      {/* ───────── CONTACT FORM (GHL) ───────── */}
+      <ContactFormSection ctaWithForm={item.ctaWithForm} accentColor={accent} />
+
+      {/* ───────── FAQ ───────── */}
+      <FaqAccordion faq={item.faq} accentColor={accent} />
+
+      {/* ───────── FINAL CTA ───────── */}
+      <CtaBanner variant="full" data={item.finalCta} accentColor={accent} />
+
+      {/* ───────── BACK LINK ───────── */}
+      <motion.div
+        className="mx-auto max-w-5xl px-6 py-10 md:px-12 lg:px-0"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
       >
-        <div className="absolute inset-0 bg-black/60" />
-        <div className="relative z-10 px-6 pb-10 md:px-12 lg:px-20">
-          <p className="mb-2 text-sm font-semibold uppercase tracking-widest" style={{ color: item.secondaryColor }}>
-            {item.hero.tagline}
-          </p>
-          <h1 className="text-4xl font-bold text-white md:text-5xl">{item.hero.title}</h1>
-          <p className="mt-3 max-w-2xl text-gray-200">{item.hero.subtitle}</p>
-        </div>
-      </div>
-
-      <div className="mx-auto max-w-4xl px-6 py-12 md:px-12 lg:px-0">
-
-        {/* Top CTA */}
-        {item.ctaTop && (
-          <section className="mb-10 rounded-2xl border border-gray-100 bg-gray-50 p-6">
-            <p className="mb-4 text-gray-600">{item.ctaTop.note}</p>
-            <div className="flex flex-wrap gap-3">
-              <Link to={item.ctaTop.primaryLink} className="rounded-lg bg-primary px-5 py-2 text-sm font-semibold text-white hover:bg-primary/90">
-                {item.ctaTop.primaryLabel}
-              </Link>
-              <a href={item.ctaTop.secondaryLink} target="_blank" rel="noreferrer" className="rounded-lg border border-primary-blue px-5 py-2 text-sm font-semibold text-primary-blue hover:bg-primary-blue/10">
-                {item.ctaTop.secondaryLabel}
-              </a>
-            </div>
-          </section>
-        )}
-
-        <hr className="mb-10 border-primary" />
-
-        {/* Multi Entity Service */}
-        {item.multiEntityService && (
-          <section className="mb-10">
-            <h2 className="mb-3 text-2xl font-bold text-primary">{item.multiEntityService.title}</h2>
-            <p className="text-gray-600">{item.multiEntityService.description}</p>
-          </section>
-        )}
-
-        {/* CTA after service */}
-        {item.ctaAfterService && (
-          <div className="mb-10 rounded-xl bg-primary/5 p-5">
-            <p className="mb-3 text-gray-600">{item.ctaAfterService.text}</p>
-            <Link to={item.ctaAfterService.link} className="text-sm font-semibold text-primary hover:underline">
-              {item.ctaAfterService.label} →
-            </Link>
-          </div>
-        )}
-
-        <hr className="mb-10 border-primary" />
-
-        {/* Different Entity Needs */}
-        {item.differentEntityNeeds && (
-          <section className="mb-10">
-            <h2 className="mb-3 text-2xl font-bold text-primary">{item.differentEntityNeeds.title}</h2>
-            <p className="text-gray-600">{item.differentEntityNeeds.description}</p>
-          </section>
-        )}
-
-        {item.ctaAfterDifferentNeeds && (
-          <div className="mb-10 rounded-xl bg-primary/5 p-5">
-            <p className="mb-3 text-gray-600">{item.ctaAfterDifferentNeeds.text}</p>
-            <Link to={item.ctaAfterDifferentNeeds.link} className="text-sm font-semibold text-primary hover:underline">
-              {item.ctaAfterDifferentNeeds.label} →
-            </Link>
-          </div>
-        )}
-
-        <hr className="mb-10 border-primary" />
-
-        {/* Pain Points & Solutions */}
-        {item.painPointsAndSolutions && (
-          <section className="mb-10">
-            <h2 className="mb-3 text-2xl font-bold text-primary">{item.painPointsAndSolutions.title}</h2>
-            <p className="mb-6 text-gray-600">{item.painPointsAndSolutions.intro}</p>
-            <div className="space-y-6">
-              {item.painPointsAndSolutions.entities.map((entity, i) => (
-                <div key={i} className="rounded-xl border border-gray-200 p-5">
-                  <p className="mb-1 text-sm font-semibold uppercase tracking-widest text-primary-blue">{entity.category}</p>
-                  <h3 className="mb-3 text-lg font-bold text-primary">{entity.entityName}</h3>
-                  <div className="grid gap-4 md:grid-cols-2">
-                    <div>
-                      <p className="mb-1 text-xs font-semibold uppercase text-gray-400">Pain Point</p>
-                      <p className="text-gray-600">{entity.painPoint}</p>
-                    </div>
-                    <div>
-                      <p className="mb-1 text-xs font-semibold uppercase text-gray-400">Solution</p>
-                      <p className="text-gray-600">{entity.solution}</p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </section>
-        )}
-
-        <hr className="mb-10 border-primary" />
-
-        {/* Outcomes */}
-        {item.outcomes && (
-          <section className="mb-10">
-            <h2 className="mb-3 text-2xl font-bold text-primary">{item.outcomes.title}</h2>
-            <p className="mb-4 text-gray-600">{item.outcomes.summary}</p>
-            <ul className="space-y-2">
-              {item.outcomes.points.map((point, i) => (
-                <li key={i} className="flex items-start gap-2 text-gray-600">
-                  <span className="mt-1 text-primary">✓</span> {point}
-                </li>
-              ))}
-            </ul>
-          </section>
-        )}
-
-        <hr className="mb-10 border-primary" />
-
-        {/* Client Remarks */}
-        {item.clientRemarks && (
-          <section className="mb-10 rounded-2xl border-l-4 border-primary bg-gray-50 p-6">
-            <p className="mb-4 text-lg italic text-gray-700">"{item.clientRemarks.quote}"</p>
-            <p className="font-semibold text-primary">{item.clientRemarks.author}</p>
-            <p className="text-sm text-gray-500">{item.clientRemarks.designation}</p>
-          </section>
-        )}
-
-        {/* FAQ */}
-        {item.faq?.length > 0 && (
-          <section className="mb-10">
-            <h2 className="mb-6 text-2xl font-bold text-primary">FAQs</h2>
-            <div className="space-y-4">
-              {item.faq.map((f, i) => (
-                <div key={i} className="rounded-xl border border-gray-200 p-5">
-                  <p className="mb-2 font-semibold text-primary-blue">{f.question}</p>
-                  <p className="text-gray-600">{f.answer}</p>
-                </div>
-              ))}
-            </div>
-          </section>
-        )}
-
-        {/* Final CTA */}
-        {item.finalCta && (
-          <section className="mb-10 rounded-2xl bg-primary p-8 text-white">
-            <h2 className="mb-3 text-2xl font-bold">{item.finalCta.title}</h2>
-            <p className="mb-2 text-white/80">{item.finalCta.description}</p>
-            <p className="mb-5 text-sm text-white/60">{item.finalCta.urgencyText}</p>
-            <Link to={item.finalCta.link} className="rounded-lg bg-white px-6 py-3 text-sm font-semibold text-primary hover:bg-gray-100">
-              {item.finalCta.label}
-            </Link>
-          </section>
-        )}
-
-        <Link to="/case-studies" className="text-sm font-semibold text-primary-blue hover:underline">
-          ← Back to Case Studies
+        <Link
+          to="/case-studies"
+          className="inline-flex items-center gap-2 text-sm font-semibold text-primary transition-all duration-300 hover:gap-3"
+        >
+          <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+          </svg>
+          Back to all Case Studies
         </Link>
-
-      </div>
+      </motion.div>
     </div>
   );
 };
