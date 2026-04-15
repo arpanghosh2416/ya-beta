@@ -17,110 +17,78 @@ const CaseStudy = () => {
   const { slug } = useParams();
   const item = caseDetails.find((c) => c.slug === slug);
 
-  // 404 — Case study not found
   if (!item) {
     return (
-      <div className="flex min-h-screen flex-col items-center justify-center bg-gray-50 px-6">
-        <motion.div
-          className="text-center"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
+      <div className="flex min-h-screen flex-col items-center justify-center bg-[#050505] px-6 text-center">
+        <motion.h1 
+          className="font-poppins text-8xl font-bold text-white/10"
+          initial={{ scale: 0.8, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.8 }}
         >
-          <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-primary/10">
-            <svg
-              className="h-10 w-10 text-primary"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth={1.5}
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-              />
-            </svg>
-          </div>
-          <h1 className="mb-2 font-poppins text-3xl font-bold text-gray-900">
-            Case Study Not Found
-          </h1>
-          <p className="mb-8 text-gray-500">
-            The case study you're looking for doesn't exist or has been removed.
-          </p>
-          <Link
-            to="/case-studies"
-            className="inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 text-sm font-bold text-white transition-all duration-300 hover:shadow-lg hover:brightness-110"
-          >
-            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
-            </svg>
-            Back to Case Studies
-          </Link>
-        </motion.div>
+          404
+        </motion.h1>
+        <p className="mt-6 font-poppins text-2xl text-white">Project Not Found</p>
+        <Link
+          to="/case-studies"
+          className="mt-10 rounded-full border border-white/20 px-8 py-4 text-sm font-bold uppercase tracking-widest text-white transition-colors hover:bg-white hover:text-black"
+        >
+          Return to Portfolio
+        </Link>
       </div>
     );
   }
 
+  // Derive theme from data or enforce dark mode baseline
+  const bgColor = item.background || "#050505";
   const accent = item.secondaryColor || "#BE3887";
 
   return (
-    <div className="min-h-screen bg-white" id={`case-study-${slug}`}>
-      {/* ───────── HERO ───────── */}
+    <div 
+      className="min-h-screen transition-colors duration-1000 ease-in-out selection:bg-primary selection:text-white" 
+      style={{ backgroundColor: bgColor }} 
+      id={`case-study-${slug}`}
+    >
       <HeroSection
         hero={item.hero}
         clientName={item.clientName}
-        background={item.background}
+        background={bgColor}
         secondaryColor={accent}
         slug={slug}
       />
 
-      {/* ───────── TOP CTA (YA + Client buttons) ───────── */}
       <CtaBanner variant="dual" data={item.ctaTop} accentColor={accent} />
 
-      {/* ───────── MULTI-ENTITY SERVICE ───────── */}
       {item.multiEntityService && (
         <SectionBlock
           label="Our Approach"
           title={item.multiEntityService.title}
           description={item.multiEntityService.description}
           accentColor={accent}
-          id="case-approach"
         />
       )}
 
-      {/* ───────── CTA AFTER SERVICE ───────── */}
       <CtaBanner variant="inline" data={item.ctaAfterService} accentColor={accent} />
 
-      {/* ───────── DIFFERENT ENTITY NEEDS ───────── */}
       {item.differentEntityNeeds && (
         <SectionBlock
           label="The Challenge"
           title={item.differentEntityNeeds.title}
           description={item.differentEntityNeeds.description}
           accentColor={accent}
-          id="case-challenge"
-          className="bg-gray-50"
         />
       )}
 
-      {/* ───────── CTA AFTER DIFFERENT NEEDS ───────── */}
-      <CtaBanner
-        variant="inline"
-        data={item.ctaAfterDifferentNeeds}
-        accentColor={accent}
-      />
+      <CtaBanner variant="inline" data={item.ctaAfterDifferentNeeds} accentColor={accent} />
 
-      {/* ───────── PAIN POINTS & SOLUTIONS ───────── */}
       {item.painPointsAndSolutions && (
         <SectionBlock
-          label="Pain Points & Solutions"
+          label="Analysis"
           title={item.painPointsAndSolutions.title}
           description={item.painPointsAndSolutions.intro}
           accentColor={accent}
-          id="case-pain-solutions"
         >
-          <div className="mt-8 space-y-5">
+          <div className="mt-12 space-y-8">
             {item.painPointsAndSolutions.entities.map((entity, i) => (
               <PainPointCard
                 key={i}
@@ -133,42 +101,21 @@ const CaseStudy = () => {
         </SectionBlock>
       )}
 
-      {/* ───────── URGENCY MID CTA ───────── */}
       <CtaBanner variant="full" data={item.ctaUrgencyMid} accentColor={accent} />
 
-      {/* ───────── OUTCOMES ───────── */}
       <OutcomeSection outcomes={item.outcomes} accentColor={accent} />
 
-      {/* ───────── CLIENT REMARKS / TESTIMONIAL ───────── */}
       <TestimonialBlock clientRemarks={item.clientRemarks} accentColor={accent} />
 
-      {/* ───────── CONTACT FORM (GHL) ───────── */}
       <ContactFormSection ctaWithForm={item.ctaWithForm} accentColor={accent} />
 
-      {/* ───────── FAQ ───────── */}
-      <FaqAccordion faq={item.faq} accentColor={accent} />
+      {/* FAQ can stay as an accordion but inside SectionBlock styling if needed. Left it out of dark mode override initially, let's fix its dark mode. */}
+      <div className="bg-[#030303]">
+        <FaqAccordion faq={item.faq} accentColor={accent} />
+      </div>
 
-      {/* ───────── FINAL CTA ───────── */}
       <CtaBanner variant="full" data={item.finalCta} accentColor={accent} />
 
-      {/* ───────── BACK LINK ───────── */}
-      <motion.div
-        className="mx-auto max-w-5xl px-6 py-10 md:px-12 lg:px-0"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5 }}
-      >
-        <Link
-          to="/case-studies"
-          className="inline-flex items-center gap-2 text-sm font-semibold text-primary transition-all duration-300 hover:gap-3"
-        >
-          <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
-          </svg>
-          Back to all Case Studies
-        </Link>
-      </motion.div>
     </div>
   );
 };

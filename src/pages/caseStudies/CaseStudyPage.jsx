@@ -6,85 +6,78 @@ import { CaseCard } from "./components";
 const CaseStudyPage = () => {
   const publishedStudies = caseStudies.filter((item) => item.isPublished);
 
-  return (
-    <div id="case-studies" className="min-h-screen bg-[#0a0f1a]">
-      {/* Hero Header */}
-      <section className="relative overflow-hidden px-6 pb-12 pt-20 md:px-12 md:pb-16 md:pt-28 lg:px-20">
-        {/* Decorative background elements */}
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute -left-40 -top-40 h-80 w-80 rounded-full bg-primary/10 blur-3xl" />
-          <div className="absolute -bottom-20 -right-20 h-60 w-60 rounded-full bg-primary-blue/10 blur-3xl" />
-          <div className="absolute left-1/2 top-1/3 h-40 w-40 rounded-full bg-primary-blue-ed/5 blur-2xl" />
-        </div>
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+      },
+    },
+  };
 
-        <div className="relative z-10 mx-auto max-w-7xl">
-          {/* Top label */}
-          <motion.div
-            className="mb-6 flex items-center gap-3"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            <div className="h-px flex-1 max-w-[60px] bg-gradient-to-r from-primary to-transparent" />
-            <span className="text-xs font-bold uppercase tracking-[0.3em] text-primary">
-              Our Premium
-            </span>
-            <div className="h-px flex-1 max-w-[60px] bg-gradient-to-l from-primary to-transparent" />
+  const itemVariants = {
+    hidden: { opacity: 0, y: 50 },
+    show: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
+  };
+
+  return (
+    <div className="min-h-screen bg-[#030303] selection:bg-primary selection:text-white">
+      {/* Background Noise Setup */}
+      <div 
+        className="pointer-events-none fixed inset-0 z-0 opacity-[0.03]"
+        style={{ backgroundImage: "url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E')" }}
+      />
+
+      <motion.section
+        variants={containerVariants}
+        initial="hidden"
+        animate="show"
+        className="relative z-10 mx-auto max-w-screen-2xl px-6 pb-20 pt-32 md:px-12 md:pb-32 md:pt-48 lg:px-20"
+      >
+        {/* Header Area */}
+        <div className="mb-20 grid grid-cols-1 gap-10 md:grid-cols-12 md:items-end">
+          <motion.div variants={itemVariants} className="md:col-span-8">
+            <h2 className="mb-6 font-poppins text-sm font-semibold uppercase tracking-[0.4em] text-primary">
+              Portfolio
+            </h2>
+            <h1 className="font-poppins text-6xl font-bold uppercase leading-[0.9] tracking-tighter text-white sm:text-7xl md:text-8xl lg:text-[10rem]">
+              Selected
+              <br />
+              <span className="text-white/40">Works</span>
+            </h1>
           </motion.div>
 
-          {/* Title */}
-          <motion.h1
-            className="mb-4 font-poppins text-4xl font-bold text-white sm:text-5xl md:text-6xl"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-          >
-            Case{" "}
-            <span className="bg-gradient-to-r from-primary via-primary-blue-ed to-primary-blue bg-clip-text text-transparent">
-              Studies
-            </span>
-          </motion.h1>
-
-          {/* Subtitle */}
-          <motion.p
-            className="max-w-2xl text-base leading-relaxed text-gray-400 sm:text-lg"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-          >
-            Explore how we have helped businesses strengthen digital presence,
-            improve communication, and build scalable growth systems.
-          </motion.p>
-
-          {/* Divider */}
-          <motion.div
-            className="mt-8 h-px bg-gradient-to-r from-primary/40 via-primary-blue/20 to-transparent"
-            initial={{ scaleX: 0, transformOrigin: "left" }}
-            animate={{ scaleX: 1 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-          />
+          <motion.div variants={itemVariants} className="md:col-span-4 md:mb-6">
+            <p className="max-w-md text-lg font-light leading-relaxed text-white/50 md:text-xl">
+              A curated collection of digital transformations. We engineer scalable systems, craft premium experiences, and redefine brand ecosystems.
+            </p>
+          </motion.div>
         </div>
-      </section>
 
-      {/* Cards Grid */}
-      <section className="px-6 pb-20 md:px-12 lg:px-20">
-        <div className="mx-auto max-w-7xl">
-          <div className="grid gap-6 md:grid-cols-2 lg:gap-8">
-            {publishedStudies.map((item, index) => (
-              <CaseCard key={item.slug} item={item} index={index} />
-            ))}
-          </div>
+        {/* Dynamic Line */}
+        <motion.div
+           initial={{ scaleX: 0 }}
+           animate={{ scaleX: 1 }}
+           transition={{ duration: 1.5, ease: [0.25, 1, 0.5, 1], delay: 0.4 }}
+           className="mb-20 h-px w-full origin-left bg-white/10"
+        />
 
-          {/* Empty state */}
+        {/* Project Grid / List */}
+        <div className="flex flex-col gap-12 md:gap-24">
+          {publishedStudies.map((item, index) => (
+            <CaseCard key={item.slug} item={item} index={index} />
+          ))}
+
           {publishedStudies.length === 0 && (
             <div className="py-20 text-center">
-              <p className="text-lg text-gray-500">
-                No case studies published yet. Check back soon!
+              <p className="font-poppins text-2xl text-white/40">
+                New case studies arriving soon.
               </p>
             </div>
           )}
         </div>
-      </section>
+      </motion.section>
     </div>
   );
 };

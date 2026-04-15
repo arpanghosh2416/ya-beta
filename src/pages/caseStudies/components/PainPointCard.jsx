@@ -4,55 +4,60 @@ import { motion } from "framer-motion";
 const PainPointCard = ({ entity, index, accentColor }) => {
   return (
     <motion.div
-      className="overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-sm transition-shadow duration-300 hover:shadow-md"
-      initial={{ opacity: 0, y: 20 }}
+      className="group relative overflow-hidden rounded-[2rem] border border-white/5 bg-white/[0.02] p-8 md:p-12 transition-all hover:bg-white/[0.04]"
+      initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.5, delay: index * 0.1 }}
+      transition={{ duration: 0.6, delay: index * 0.1 }}
     >
-      {/* Header */}
-      <div className="border-b border-gray-100 bg-gray-50/50 px-6 py-4">
-        <span
-          className="mb-1 inline-block rounded-full px-3 py-0.5 text-xs font-bold uppercase tracking-wider text-white"
-          style={{ backgroundColor: accentColor || "#3983C5" }}
-        >
-          {entity.category}
-        </span>
-        <h3 className="mt-2 font-poppins text-lg font-bold text-gray-900">
-          {entity.entityName}
-        </h3>
-      </div>
+      {/* Background Glow on Hover */}
+      <div 
+        className="absolute -inset-x-20 -inset-y-20 z-0 bg-gradient-radial blur-3xl opacity-0 transition-opacity duration-700 group-hover:opacity-20"
+        style={{ 
+          backgroundImage: `radial-gradient(circle at 50% 50%, ${accentColor || '#BE3887'} 0%, transparent 50%)`
+        }} 
+      />
 
-      {/* Pain Point & Solution — side by side */}
-      <div className="grid gap-0 md:grid-cols-2">
-        {/* Pain Point */}
-        <div className="border-b border-gray-100 p-6 md:border-b-0 md:border-r">
-          <div className="mb-3 flex items-center gap-2">
-            <div className="flex h-7 w-7 items-center justify-center rounded-full bg-red-100">
-              <svg className="h-4 w-4 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.834-1.964-.834-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z" />
-              </svg>
-            </div>
-            <p className="text-xs font-bold uppercase tracking-wider text-red-500">
-              Pain Point
-            </p>
-          </div>
-          <p className="text-sm leading-relaxed text-gray-600">{entity.painPoint}</p>
+      <div className="relative z-10 flex flex-col md:flex-row gap-12 lg:gap-20">
+        {/* Left Side: Meta */}
+        <div className="md:w-1/3 shrink-0">
+          <span
+            className="mb-4 inline-block rounded-full border border-white/20 bg-white/5 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-white backdrop-blur-md"
+          >
+            {entity.category}
+          </span>
+          <h3 className="font-poppins text-2xl font-bold uppercase leading-tight text-white md:text-3xl lg:text-4xl">
+            {entity.entityName}
+          </h3>
         </div>
 
-        {/* Solution */}
-        <div className="p-6">
-          <div className="mb-3 flex items-center gap-2">
-            <div className="flex h-7 w-7 items-center justify-center rounded-full bg-emerald-100">
-              <svg className="h-4 w-4 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
+        {/* Right Side: Data Grid */}
+        <div className="flex-1 grid gap-8 sm:grid-cols-2">
+          {/* Pain Point */}
+          <div>
+            <div className="mb-4 flex items-center gap-3">
+              <div className="h-px flex-1 bg-white/10" />
+              <p className="text-xs font-bold uppercase tracking-widest text-[#ef4444]">
+                The Problem
+              </p>
             </div>
-            <p className="text-xs font-bold uppercase tracking-wider text-emerald-500">
-              Solution
+            <p className="text-lg font-light leading-relaxed text-white/50">
+              {entity.painPoint}
             </p>
           </div>
-          <p className="text-sm leading-relaxed text-gray-600">{entity.solution}</p>
+
+          {/* Solution */}
+          <div>
+            <div className="mb-4 flex items-center gap-3">
+              <div className="h-px flex-1 bg-white/10" />
+              <p className="text-xs font-bold uppercase tracking-widest text-[#10b981]">
+                Our Solution
+              </p>
+            </div>
+            <p className="text-lg font-light leading-relaxed text-white/80">
+              {entity.solution}
+            </p>
+          </div>
         </div>
       </div>
     </motion.div>

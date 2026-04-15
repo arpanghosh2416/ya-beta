@@ -1,53 +1,56 @@
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 const TestimonialBlock = ({ clientRemarks, accentColor }) => {
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start end", "end start"]
+  });
+  
+  const yBg = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
+
   if (!clientRemarks) return null;
 
   return (
     <motion.section
-      className="py-12 md:py-16"
+      ref={ref}
+      className="relative flex min-h-[600px] items-center justify-center overflow-hidden py-24 md:py-40"
       id="case-testimonial"
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.6 }}
+      transition={{ duration: 0.8 }}
     >
-      <div className="mx-auto max-w-5xl px-6 md:px-12 lg:px-0">
-        <div className="relative overflow-hidden rounded-2xl bg-gray-50 p-8 sm:p-10 md:p-12">
-          {/* Large quotation mark */}
-          <div
-            className="absolute -left-2 -top-4 font-poppins text-[120px] font-bold leading-none opacity-10 sm:text-[160px]"
-            style={{ color: accentColor || "#BE3887" }}
-          >
-            "
-          </div>
+      {/* Background Graphic */}
+      <motion.div 
+        className="absolute inset-0 z-0 opacity-20 filter blur-[100px]"
+        style={{ 
+          y: yBg,
+          background: `radial-gradient(ellipse at center, ${accentColor || '#BE3887'} 0%, transparent 60%)`
+        }}
+      />
 
-          {/* Accent left border */}
-          <div
-            className="absolute bottom-0 left-0 top-0 w-1.5 rounded-full"
-            style={{ backgroundColor: accentColor || "#BE3887" }}
-          />
+      <div className="relative z-10 mx-auto max-w-5xl px-6 text-center md:px-12">
+        {/* Quote Mark */}
+        <div 
+          className="mb-10 font-poppins text-[8rem] leading-[0] md:text-[12rem] mx-auto text-center font-bold"
+          style={{ color: accentColor || '#BE3887' }}
+        >
+           “
+        </div>
 
-          <div className="relative z-10">
-            <p className="mb-6 font-poppins text-lg font-medium italic leading-relaxed text-gray-700 sm:text-xl md:text-2xl">
-              "{clientRemarks.quote}"
-            </p>
-            <div className="flex items-center gap-3">
-              <div
-                className="h-10 w-10 rounded-full flex items-center justify-center text-white font-bold text-sm"
-                style={{ backgroundColor: accentColor || "#BE3887" }}
-              >
-                {clientRemarks.author?.charAt(0) || "C"}
-              </div>
-              <div>
-                <p className="font-poppins text-sm font-bold text-gray-900">
-                  {clientRemarks.author}
-                </p>
-                <p className="text-xs text-gray-500">{clientRemarks.designation}</p>
-              </div>
-            </div>
-          </div>
+        <p className="mb-16 font-poppins text-2xl font-light italic leading-relaxed text-white sm:text-3xl md:text-5xl">
+          {clientRemarks.quote}
+        </p>
+        
+        <div className="flex flex-col items-center justify-center gap-2">
+          <p className="font-poppins text-lg font-bold uppercase tracking-widest text-white">
+            {clientRemarks.author}
+          </p>
+          <p className="text-sm uppercase tracking-widest text-white/40">
+            {clientRemarks.designation}
+          </p>
         </div>
       </div>
     </motion.section>

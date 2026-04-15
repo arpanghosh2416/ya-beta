@@ -7,55 +7,56 @@ const FaqAccordion = ({ faq, accentColor }) => {
 
   return (
     <motion.section
-      className="bg-gray-50 py-12 md:py-16"
+      className="py-24 md:py-32"
       id="case-faq"
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.6 }}
+      transition={{ duration: 0.8 }}
     >
-      <div className="mx-auto max-w-5xl px-6 md:px-12 lg:px-0">
-        <p
-          className="mb-3 text-xs font-bold uppercase tracking-[0.2em]"
-          style={{ color: accentColor || "#BE3887" }}
-        >
-          Have Questions?
-        </p>
-        <h2 className="mb-4 font-poppins text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl">
-          Frequently Asked Questions
-        </h2>
-        <div
-          className="mb-8 h-1 w-16 rounded-full"
-          style={{ backgroundColor: accentColor || "#BE3887" }}
-        />
+      <div className="mx-auto max-w-screen-md px-6 md:px-12">
+        <div className="mb-16 text-center">
+          <p
+            className="mb-4 text-xs font-bold uppercase tracking-[0.2em]"
+            style={{ color: accentColor || "#BE3887" }}
+          >
+            Insights
+          </p>
+          <h2 className="font-poppins text-4xl font-bold uppercase text-white md:text-5xl">
+            Frequent Questions
+          </h2>
+        </div>
 
-        <div className="space-y-3">
+        <div className="space-y-4">
           {faq.map((item, i) => (
             <Disclosure key={i}>
               {({ open }) => (
                 <div
-                  className={`overflow-hidden rounded-xl border transition-all duration-300 ${
+                  className={`overflow-hidden rounded-2xl border transition-all duration-500 ${
                     open
-                      ? "border-gray-200 bg-white shadow-sm"
-                      : "border-gray-100 bg-white hover:border-gray-200"
+                      ? "border-white/20 bg-white/5"
+                      : "border-white/5 bg-transparent hover:border-white/10"
                   }`}
                 >
-                  <Disclosure.Button className="flex w-full items-center justify-between px-6 py-5 text-left">
-                    <span className="pr-4 font-poppins text-sm font-semibold text-gray-900 sm:text-base">
+                  <Disclosure.Button className="flex w-full items-center justify-between px-8 py-6 text-left outline-none">
+                    <span className="pr-8 font-poppins text-lg font-medium text-white md:text-xl">
                       {item.question}
                     </span>
-                    <svg
-                      className={`h-5 w-5 shrink-0 transition-transform duration-300 ${
-                        open ? "rotate-180" : ""
-                      }`}
-                      style={{ color: accentColor || "#BE3887" }}
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      strokeWidth={2}
+                    <span 
+                      className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/20"
                     >
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-                    </svg>
+                      <svg
+                        className={`h-5 w-5 text-white transition-transform duration-500 ${
+                          open ? "rotate-45" : ""
+                        }`}
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m8-8H4" />
+                      </svg>
+                    </span>
                   </Disclosure.Button>
 
                   <AnimatePresence initial={false}>
@@ -66,10 +67,10 @@ const FaqAccordion = ({ faq, accentColor }) => {
                         initial={{ height: 0, opacity: 0 }}
                         animate={{ height: "auto", opacity: 1 }}
                         exit={{ height: 0, opacity: 0 }}
-                        transition={{ duration: 0.3, ease: "easeInOut" }}
+                        transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
                       >
-                        <div className="border-t border-gray-100 px-6 pb-5 pt-4">
-                          <p className="text-sm leading-relaxed text-gray-600 sm:text-base">
+                        <div className="px-8 pb-8 pt-2">
+                          <p className="text-lg font-light leading-relaxed text-white/50">
                             {item.answer}
                           </p>
                         </div>

@@ -8,7 +8,7 @@ export const caseStudies = [
       tagline:
         "Delivering structured digital systems that align multiple business units under one growth-focused strategy.",
     },
-    bg:"https://youngarchitects.in/assets/image/Test.jpeg",
+    bg: "http://localhost:3000/static/media/iw-x-ya.32bd5ca5f686f8865eda.webp",
     services: [
       { id: "website-development", title: "Website Development" },
       { id: "ui-ux-structuring", title: "UI/UX Structuring" },
@@ -25,7 +25,7 @@ export const caseStudies = [
       tagline:
         "Structured execution designed to support trust, usability, and future growth.",
     },
-    bg:"https://youngarchitects.in/assets/image/Test.jpeg",
+    bg: "http://localhost:3000/static/media/sd-x-ya.ff2490fd926b6ef731f1.webp",
     services: [
       { id: "website-development", title: "Website Development" },
       { id: "ui-ux-structuring", title: "UI/UX Structuring" },
